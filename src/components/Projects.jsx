@@ -11,9 +11,9 @@ const overview = [
   { label: "Commerce", value: "91 Score", Icon: BarChart3 }
 ];
 
-export default function Projects() {
+export default function Projects({ sectionId = "projects" }) {
   return (
-    <section id="projects" className="section-offset section-panel light-band">
+    <section id={sectionId || undefined} className="section-offset section-panel light-band">
       <div className="absolute inset-0 animated-grid opacity-35" />
       <div className="absolute inset-0 wave-lines opacity-[0.10]" />
       <div className="section-blob left-[-8rem] top-32 h-80 w-80 bg-purpleAccent/20" />
@@ -60,8 +60,10 @@ export default function Projects() {
                 <motion.article
                   key={label}
                   className="gradient-border glow-card glass-card-strong rounded-[1.45rem] p-5"
-                  animate={{ y: [0, index % 2 ? 7 : -7, 0] }}
-                  transition={{ duration: 5.2 + index * 0.25, repeat: Infinity, ease: "easeInOut" }}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.05 }}
                   whileHover={{ scale: 1.03 }}
                 >
                   <div className="flex items-center justify-between">
@@ -74,9 +76,9 @@ export default function Projects() {
                   <p className="mt-1 text-sm font-bold text-slate-400">{value}</p>
                   <div className="mt-4 h-2 rounded-full bg-[#111018]">
                     <motion.div
-                      className="h-full rounded-full bg-gradient-to-r from-violetAccent via-skyAccent to-tealAccent"
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${78 + index * 5}%` }}
+                      className="h-full origin-left rounded-full bg-gradient-to-r from-violetAccent via-skyAccent to-tealAccent"
+                      initial={{ scaleX: 0 }}
+                      whileInView={{ scaleX: (78 + index * 5) / 100 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.9, delay: index * 0.08 }}
                     />

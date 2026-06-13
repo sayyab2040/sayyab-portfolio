@@ -2,31 +2,43 @@ import { motion, useReducedMotion } from "framer-motion";
 
 const cardVisuals = {
   "Core Software Engineering": {
-    src: "/assets/card-visuals/core-software-visual.png",
-    alt: "Software architecture, code, workflow, and technical documentation illustration"
+    src: "/assets/card-visuals/core-software-visual.webp",
+    alt: "Core Software Engineering visual",
+    width: 800,
+    height: 639
   },
   "Frontend / App Development": {
-    src: "/assets/card-visuals/frontend-app-visual.png",
-    alt: "Responsive website and mobile interface development illustration"
+    src: "/assets/card-visuals/frontend-app-visual.webp",
+    alt: "Frontend App Development visual",
+    width: 800,
+    height: 590
   },
   "Backend / Database / APIs": {
-    src: "/assets/card-visuals/backend-api-visual.png",
-    alt: "Database, API, server, and cloud infrastructure illustration",
+    src: "/assets/card-visuals/backend-api-visual.webp",
+    alt: "Backend Database API visual",
+    width: 800,
+    height: 592,
     compact: true
   },
   "QA / Testing": {
-    src: "/assets/card-visuals/qa-testing-visual.png",
-    alt: "Software testing, bug tracking, checklist, and validation illustration",
+    src: "/assets/card-visuals/qa-testing-visual.webp",
+    alt: "QA Testing workflow visual",
+    width: 800,
+    height: 551,
     compact: true
   },
   "DevOps / Cloud / Deployment": {
-    src: "/assets/card-visuals/devops-cloud-visual.png",
-    alt: "DevOps, CI/CD, cloud deployment, and monitoring illustration",
+    src: "/assets/card-visuals/devops-cloud-visual.webp",
+    alt: "DevOps Cloud Deployment visual",
+    width: 800,
+    height: 634,
     compact: true
   },
   "E-commerce / Product Operations": {
-    src: "/assets/card-visuals/ecommerce-ops-visual.png",
-    alt: "E-commerce products, analytics, logistics, and marketplace operations illustration"
+    src: "/assets/card-visuals/ecommerce-ops-visual.webp",
+    alt: "E-commerce Product Operations visual",
+    width: 800,
+    height: 697
   }
 };
 
@@ -65,7 +77,15 @@ export default function CardVisual({ title, index }) {
       }}
     >
       <span className="card-visual-glow" aria-hidden="true" />
-      <img className="card-visual" src={visual.src} alt={visual.alt} loading="lazy" decoding="async" />
+      <img
+        className="card-visual"
+        src={visual.src}
+        alt={visual.alt}
+        width={visual.width}
+        height={visual.height}
+        loading="lazy"
+        decoding="async"
+      />
     </motion.div>
   );
 }

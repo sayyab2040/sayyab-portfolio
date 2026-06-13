@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useId } from "react";
 
 export default function BarChart({ data = [
@@ -25,18 +24,13 @@ export default function BarChart({ data = [
 
           return (
             <g key={index}>
-              <motion.rect
+              <rect
                 x={x - 15}
                 y={y}
                 width="30"
                 height={barHeight}
                 rx="4"
                 fill={`url(#${gradientId})`}
-                initial={{ height: 0, y: 110 }}
-                whileInView={{ height: barHeight, y }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                filter="drop-shadow(0 0 5px rgba(34, 211, 238, 0.30))"
               />
               <text
                 x={x}

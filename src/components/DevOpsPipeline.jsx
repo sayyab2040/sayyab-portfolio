@@ -15,18 +15,22 @@ const pipelineStages = [
   { label: "Grafana", desc: "Monitoring and health signals", Icon: Gauge }
 ];
 
-export default function DevOpsPipeline() {
+export default function DevOpsPipeline({ sectionId = "devops" }) {
   const [activeStep, setActiveStep] = useState(0);
+  const sectionRef = useRef(null);
+  const sectionInView = useInView(sectionRef, { amount: 0.08 });
 
   useEffect(() => {
+    if (!sectionInView) return undefined;
+
     const interval = window.setInterval(() => {
       setActiveStep((step) => (step + 1) % pipelineStages.length);
     }, 2500);
     return () => window.clearInterval(interval);
-  }, []);
+  }, [sectionInView]);
 
   return (
-    <section id="devops" className="section-offset section-panel dark-band">
+    <section ref={sectionRef} id={sectionId || undefined} className="section-offset section-panel dark-band">
       <div className="absolute inset-0 dark-grid opacity-[0.38]" />
       <div className="section-blob -left-28 top-24 h-96 w-96 bg-royal/20" />
       <div className="section-blob right-[-8rem] top-1/3 h-[28rem] w-[28rem] bg-tealAccent/20" />
@@ -73,8 +77,8 @@ export default function DevOpsPipeline() {
                           ? "border-cyan-300/45 bg-[#111018] text-white"
                           : "border-purple-300/15 bg-[#0B0712] text-slate-400"
                       }`}
-                      animate={active ? { scale: [1, 1.012, 1] } : {}}
-                      transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+                      animate={{ scale: active ? 1.012 : 1 }}
+                      transition={{ duration: 0.3, ease: "easeOut" }}
                     >
                       <span className="min-w-0 truncate">
                         <span className={`mr-2 inline-block h-2 w-2 rounded-full ${active ? "bg-cyan-300 shadow-[0_0_12px_rgba(34,211,238,0.9)]" : "bg-slate-700"}`} />
@@ -110,9 +114,9 @@ export default function DevOpsPipeline() {
                       </div>
                       <div className="mt-3 h-2 overflow-hidden rounded-full bg-[#111018]">
                         <motion.div
-                          className="h-full rounded-full bg-gradient-to-r from-violetAccent via-skyAccent to-tealAccent"
-                          animate={{ width: active ? "94%" : "34%" }}
-                          transition={{ duration: 0.6 }}
+                          className="h-full origin-left rounded-full bg-gradient-to-r from-violetAccent via-skyAccent to-tealAccent"
+                          animate={{ scaleX: active ? 0.94 : 0.34 }}
+                          transition={{ duration: 0.4, ease: "easeOut" }}
                         />
                       </div>
                     </div>
@@ -144,9 +148,11 @@ export default function DevOpsPipeline() {
           <div className="dark-inner-panel relative overflow-x-auto rounded-[1.55rem] border border-cyan-300/20 p-4 pb-5">
             <div className="absolute left-8 right-8 top-12 hidden h-1 rounded-full bg-[#111018] md:block" />
             <motion.div
-              className="absolute left-8 top-12 hidden h-1 rounded-full bg-gradient-to-r from-violetAccent via-skyAccent to-tealAccent md:block"
-              animate={{ width: ["0%", "91%"] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+              className="absolute left-8 right-8 top-12 hidden h-1 origin-left rounded-full bg-gradient-to-r from-violetAccent via-skyAccent to-tealAccent md:block"
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: 0.91 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
             />
             <div className="relative flex min-w-[930px] justify-between gap-4">
               {pipelineStages.map(({ label, desc, Icon }, index) => (

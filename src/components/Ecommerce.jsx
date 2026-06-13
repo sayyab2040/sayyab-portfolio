@@ -5,9 +5,9 @@ import BarChart from "./BarChart.jsx";
 import ProgressBar from "./ProgressBar.jsx";
 import SectionTitle from "./SectionTitle.jsx";
 
-export default function Ecommerce() {
+export default function Ecommerce({ sectionId = "ecommerce" }) {
   return (
-    <section id="ecommerce" className="section-offset section-panel light-band">
+    <section id={sectionId || undefined} className="section-offset section-panel light-band">
       <div className="absolute inset-0 animated-grid opacity-[0.30]" />
       <div className="absolute inset-0 wave-lines opacity-[0.10]" />
       <div className="section-blob left-[-9rem] top-28 h-80 w-80 bg-purpleAccent/20" />

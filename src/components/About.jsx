@@ -3,9 +3,9 @@ import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
 import { aboutCards, lifecycle } from "../data/portfolioData.js";
 import SectionTitle from "./SectionTitle.jsx";
 
-export default function About() {
+export default function About({ sectionId = "about" }) {
   return (
-    <section id="about" className="section-offset section-panel light-band">
+    <section id={sectionId || undefined} className="section-offset section-panel light-band">
       <div className="absolute inset-0 animated-grid opacity-35" />
       <div className="absolute inset-0 wave-lines opacity-[0.12]" />
       <div className="section-blob -left-24 top-20 h-72 w-72 bg-purpleAccent/20" />
@@ -44,7 +44,7 @@ export default function About() {
 
             <div className="mt-6 space-y-4 text-sm font-medium leading-7 text-slate-300 sm:text-[0.96rem]">
               <p>
-                I am a Software Engineer with hands-on experience across full-stack application development, mobile and web workflows, software testing, backend integration, DevOps workflows, cloud deployment, monitoring, and technical documentation.
+                I am Sayyab Ashraf, a Software Engineer building full-stack applications, QA automation workflows, DevOps pipelines, cloud deployments, and product-focused digital systems. The Sayyab Ashraf Portfolio highlights TravEra and Product Operations work.
               </p>
               <p>
                 My work focuses on practical execution: authentication systems, role-based dashboards, booking workflows, API integration, database connectivity, test automation, CI/CD pipelines, Docker environments, cloud server deployment, and monitoring dashboards.
@@ -55,16 +55,14 @@ export default function About() {
             </div>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-3">
-              {["Product thinking", "QA evidence", "Cloud delivery"].map((label, index) => (
-                <motion.div
+              {["Product thinking", "QA evidence", "Cloud delivery"].map((label) => (
+                <div
                   key={label}
                   className="rounded-2xl border border-purple-300/25 bg-[#111018] p-4 shadow-premium"
-                  animate={{ y: [0, index % 2 ? 4 : -4, 0] }}
-                  transition={{ duration: 5 + index * 0.3, repeat: Infinity, ease: "easeInOut" }}
                 >
                   <Sparkles size={17} className="text-amber" />
                   <p className="mt-3 text-xs font-black uppercase tracking-[0.12em] text-slate-200">{label}</p>
-                </motion.div>
+                </div>
               ))}
             </div>
           </motion.article>

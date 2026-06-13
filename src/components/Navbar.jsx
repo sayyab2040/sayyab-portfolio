@@ -9,24 +9,20 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 18);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  useEffect(() => {
-    const sections = navLinks
-      .map((link) => ({ href: link.href, el: document.querySelector(link.href) }))
-      .filter((section) => section.el);
-
     let frameId = null;
     const updateActive = () => {
       frameId = null;
+      setScrolled(window.scrollY > 18);
+
+      const sections = navLinks
+        .map((link) => ({ href: link.href, el: document.querySelector(link.href) }))
+        .filter((section) => section.el);
+      if (!sections.length) return;
+
       const offset = Math.max(120, window.innerHeight * 0.34);
       const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8;
 
-      if (atBottom && sections.length) {
+      if (atBottom) {
         setActive(sections[sections.length - 1].href);
         return;
       }
@@ -52,7 +48,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`navbar-safe fixed left-0 right-0 top-0 z-[999] w-full overflow-x-clip border-b border-yellow-300/45 bg-[#FACC15] transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-[999] w-full overflow-x-clip border-b border-yellow-300/45 bg-[#FACC15] transition-all duration-300 ${
         scrolled ? "shadow-[0_14px_38px_rgba(0,0,0,0.34)]" : "shadow-[0_10px_30px_rgba(0,0,0,0.22)]"
       }`}
     >
@@ -106,9 +102,9 @@ export default function Navbar() {
         {open ? (
           <motion.div
             className="mx-2 w-[calc(100%-1rem)] max-w-7xl overflow-hidden border-t border-black/15 bg-[#FACC15] p-2 pr-3 shadow-[0_20px_50px_rgba(0,0,0,0.26)] sm:mx-auto sm:w-full sm:pr-4 lg:hidden"
-            initial={{ opacity: 0, y: -12, height: 0 }}
-            animate={{ opacity: 1, y: 0, height: "auto" }}
-            exit={{ opacity: 0, y: -12, height: 0 }}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.24, ease: "easeOut" }}
           >
             <div className="grid gap-1 sm:grid-cols-2">

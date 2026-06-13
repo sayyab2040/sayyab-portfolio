@@ -51,20 +51,6 @@ export default {
           "system-ui",
           "sans-serif"
         ]
-      },
-      keyframes: {
-        pulseLine: {
-          "0%, 100%": { opacity: "0.35", transform: "scaleX(0.96)" },
-          "50%": { opacity: "1", transform: "scaleX(1)" }
-        },
-        shimmer: {
-          "0%": { transform: "translateX(-120%)" },
-          "100%": { transform: "translateX(120%)" }
-        }
-      },
-      animation: {
-        pulseLine: "pulseLine 2.5s ease-in-out infinite",
-        shimmer: "shimmer 4s linear infinite"
       }
     }
   },

@@ -16,9 +16,9 @@ const metrics = [
 
 const tech = ["React", "Node.js", "REST APIs", "Selenium", "Jenkins", "Docker", "AWS EC2", "Grafana", "MongoDB", "Supabase"];
 
-export default function Skills() {
+export default function Skills({ sectionId = "skills" }) {
   return (
-    <section id="skills" className="section-offset section-panel dark-band">
+    <section id={sectionId || undefined} className="section-offset section-panel dark-band">
       <div className="absolute inset-0 dark-grid opacity-45" />
       <div className="section-blob left-[-8rem] top-24 h-80 w-80 bg-skyAccent/20" />
       <div className="section-blob right-[-10rem] bottom-16 h-96 w-96 bg-purpleAccent/20" />
@@ -69,9 +69,9 @@ export default function Skills() {
                   <p className="mt-4 text-xs font-black uppercase tracking-[0.13em] text-slate-300">{label}</p>
                   <div className="mt-3 h-2 overflow-hidden rounded-full bg-[#111018]">
                     <motion.div
-                      className="h-full rounded-full bg-gradient-to-r from-violetAccent via-skyAccent to-tealAccent"
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${value}%` }}
+                      className="h-full origin-left rounded-full bg-gradient-to-r from-violetAccent via-skyAccent to-tealAccent"
+                      initial={{ scaleX: 0 }}
+                      whileInView={{ scaleX: value / 100 }}
                       viewport={{ once: true }}
                       transition={{ duration: 1, delay: index * 0.08, ease: "easeOut" }}
                     />
@@ -105,21 +105,18 @@ export default function Skills() {
             </div>
             <div className="dark-inner-panel relative min-h-[17rem] overflow-hidden rounded-[1.6rem] border border-cyan-300/20 bg-[#050505] p-4 dark-grid">
               <div className="absolute left-1/2 top-1/2 h-44 w-44 -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-300/20" />
-              <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-purple-300/20 animate-soft-spin" />
+              <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-purple-300/20" />
               <div className="absolute left-1/2 top-1/2 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[1.8rem] bg-gradient-to-br from-violetAccent via-royal to-tealAccent text-white shadow-glow">
                 <Activity size={28} />
               </div>
               <div className="relative grid grid-cols-2 gap-3 sm:grid-cols-3">
-                {tech.map((item, index) => (
-                  <motion.span
+                {tech.map((item) => (
+                  <span
                     key={item}
                     className="rounded-2xl border border-cyan-300/20 bg-[#111018] px-3 py-3 text-center text-xs font-black text-cyan-50 shadow-premium"
-                    animate={{ y: [0, index % 2 ? 6 : -6, 0] }}
-                    transition={{ duration: 4.5 + index * 0.12, repeat: Infinity, ease: "easeInOut" }}
-                    whileHover={{ scale: 1.04, borderColor: "rgba(34,211,238,0.45)" }}
                   >
                     {item}
-                  </motion.span>
+                  </span>
                 ))}
               </div>
             </div>

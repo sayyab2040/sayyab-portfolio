@@ -53,7 +53,6 @@ export default function MiniLineChart({ data = [30, 50, 35, 70, 85, 95], color =
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        filter={`drop-shadow(0 0 4px ${colorClass}80)`}
         initial={{ strokeDasharray: 100, strokeDashoffset: 100 }}
         whileInView={{ strokeDasharray: 100, strokeDashoffset: 0 }}
         viewport={{ once: true }}

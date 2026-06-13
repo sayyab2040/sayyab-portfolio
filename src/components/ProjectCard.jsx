@@ -3,14 +3,9 @@ import {
   AlertTriangle,
   ArrowRight,
   BarChart3,
-  Bell,
-  Bot,
-  Calendar,
   CheckCircle2,
-  DollarSign,
   Gauge,
   Github,
-  MessageCircle,
   Package,
   Search,
   Server,
@@ -18,7 +13,6 @@ import {
   ShieldCheck,
   ShoppingCart,
   Star,
-  Sun,
   Terminal
 } from "lucide-react";
 import BarChart from "./BarChart.jsx";
@@ -124,8 +118,10 @@ function TravEraQaVisual() {
       <span className="absolute inset-8 rounded-full bg-skyAccent/15 blur-3xl" aria-hidden="true" />
       <motion.img
         className="travera-project-image relative z-10 block h-full w-full object-contain object-center"
-        src="/assets/qa-visual.png"
-        alt="TravEra quality assurance dashboard showing browser, API, automation, bug tracking, and deployment testing"
+        src="/assets/qa-visual.webp"
+        alt="TravEra AI travel planning platform visual"
+        width="800"
+        height="800"
         loading="lazy"
         decoding="async"
         whileHover={{ scale: 1.015 }}
@@ -151,91 +147,6 @@ function Window({ title, children }) {
   );
 }
 
-function TravelMockup() {
-  return (
-    <Window title="TravEra AI Product Dashboard">
-      <div className="grid h-full gap-4 md:grid-cols-[5rem_1fr]">
-        <aside className="hidden rounded-[1.35rem] border border-cyan-300/20 bg-[#0B0712] p-3 md:block">
-          <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-skyAccent to-tealAccent text-white shadow-cyan">
-            <Bot size={18} />
-          </div>
-          {[Search, Calendar, MessageCircle, Bell].map((Icon, index) => (
-            <motion.div
-              key={index}
-              className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl border border-cyan-300/15 bg-[#111018] text-cyan-100"
-              animate={{ opacity: [0.45, 1, 0.45] }}
-              transition={{ duration: 3 + index * 0.3, repeat: Infinity, ease: "easeInOut" }}
-            >
-              <Icon size={15} />
-            </motion.div>
-          ))}
-        </aside>
-
-        <div className="min-w-0 space-y-4">
-          <div className="rounded-[1.35rem] border border-cyan-300/20 bg-[#0B0712] p-3">
-            <div className="flex items-center gap-3">
-              <Search size={16} className="text-cyan-200" />
-              <div className="h-2 flex-1 rounded-full bg-cyan-100/20" />
-              <span className="rounded-full bg-tealAccent/20 px-2 py-1 text-[0.62rem] font-black text-teal-100">AI RUN</span>
-            </div>
-          </div>
-
-          <div className="grid gap-4 sm:grid-cols-[1.1fr_0.9fr]">
-            <motion.div
-              className="rounded-[1.5rem] bg-gradient-to-br from-violetAccent via-royal to-skyAccent p-5 text-white shadow-premium"
-              animate={{ y: [0, -6, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            >
-              <div className="flex items-center justify-between">
-                <Bot size={22} />
-                <span className="rounded-full bg-amber px-2 py-1 text-[0.66rem] font-black text-[#050505]">5 Days</span>
-              </div>
-              <p className="mt-8 text-2xl font-black leading-none">Hunza Planner</p>
-              <p className="mt-2 text-xs font-bold text-cyan-50/80">Routes, stays, vendors, weather</p>
-            </motion.div>
-
-            <div className="space-y-4">
-              <div className="rounded-[1.35rem] border border-purple-300/20 bg-[#0B0712] p-4">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-black uppercase tracking-[0.14em] text-cyan-100">Vendor Bid</span>
-                  <DollarSign size={16} className="text-emerald" />
-                </div>
-                <p className="mt-3 text-xl font-black text-white">$420</p>
-                <span className="mt-2 inline-flex rounded-full bg-emerald/20 px-2 py-1 text-[0.62rem] font-black text-emerald">Best value</span>
-              </div>
-              <div className="rounded-[1.35rem] border border-cyan-300/20 bg-[#0B0712] p-4">
-                <div className="flex items-center gap-2">
-                  <Sun size={16} className="text-amber" />
-                  <span className="text-sm font-black text-white">24C Gilgit</span>
-                </div>
-                <p className="mt-2 text-xs font-bold text-slate-400">Clear weather window</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid gap-3 sm:grid-cols-[1fr_1.25fr]">
-            <div className="grid gap-3">
-              {["Booking confirmed", "Emergency verified"].map((status) => (
-                <div key={status} className="rounded-2xl border border-purple-300/20 bg-[#0B0712] p-3">
-                  <span className="status-dot" />
-                  <p className="mt-3 text-xs font-black text-cyan-50">{status}</p>
-                </div>
-              ))}
-            </div>
-            <div className="rounded-2xl border border-cyan-300/20 bg-[#0B0712] p-3">
-              <div className="mb-2 flex items-center justify-between">
-                <span className="text-[0.62rem] font-black uppercase tracking-[0.14em] text-amber">Activity</span>
-                <span className="status-dot" />
-              </div>
-              <MiniLineChart data={[34, 52, 48, 70, 76, 92]} color="cyan" height={58} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </Window>
-  );
-}
-
 function DevOpsMockup() {
   const nodes = [
     { label: "GitHub", Icon: Github },
@@ -252,17 +163,21 @@ function DevOpsMockup() {
         <div className="relative rounded-[1.6rem] border border-cyan-300/20 bg-[#0B0712] p-5">
           <div className="absolute left-8 right-8 top-12 hidden h-1 rounded-full bg-[#111018] md:block" />
           <motion.div
-            className="absolute left-8 top-12 hidden h-1 rounded-full bg-gradient-to-r from-violetAccent via-skyAccent to-tealAccent md:block"
-            animate={{ width: ["0%", "82%"] }}
-            transition={{ duration: 4.5, repeat: Infinity, ease: "linear" }}
+            className="absolute left-8 right-8 top-12 hidden h-1 origin-left rounded-full bg-gradient-to-r from-violetAccent via-skyAccent to-tealAccent md:block"
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 0.88 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           />
           <div className="relative grid grid-cols-3 gap-4 md:grid-cols-6">
             {nodes.map(({ label, Icon }, index) => (
               <motion.div
                 key={label}
                 className="flex flex-col items-center text-center"
-                animate={{ y: [0, index % 2 ? 5 : -5, 0] }}
-                transition={{ duration: 4 + index * 0.2, repeat: Infinity, ease: "easeInOut" }}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.35, delay: index * 0.04 }}
               >
                   <span className="relative flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan-300/25 bg-[#111018] text-cyan-100 shadow-premium">
                   <Icon size={18} />
@@ -339,10 +254,9 @@ function QAMockup() {
               <span className="text-xs font-black text-emerald">200 OK</span>
             </div>
             <div className="mt-3 h-2 rounded-full bg-[#111018]">
-              <motion.div
+              <div
                 className="h-full rounded-full bg-gradient-to-r from-skyAccent to-tealAccent"
-                animate={{ width: ["30%", "92%", "64%"] }}
-                transition={{ duration: 3.6, repeat: Infinity, ease: "easeInOut" }}
+                style={{ width: "64%" }}
               />
             </div>
           </div>

@@ -3,9 +3,9 @@ import { Download, FileText, GraduationCap, Sparkles } from "lucide-react";
 import { education, identity, resume } from "../data/portfolioData.js";
 import SectionTitle from "./SectionTitle.jsx";
 
-export default function ResumeEducation() {
+export default function ResumeEducation({ sectionId = "resume" }) {
   return (
-    <section id="resume" className="section-offset section-panel light-band">
+    <section id={sectionId || undefined} className="section-offset section-panel light-band">
       <div className="absolute inset-0 animated-grid opacity-[0.30]" />
       <div className="absolute inset-0 wave-lines opacity-[0.10]" />
       <div className="section-blob right-[-8rem] top-24 h-80 w-80 bg-purpleAccent/20" />

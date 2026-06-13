@@ -4,9 +4,9 @@ import { traveraFlows, traveraModules } from "../data/portfolioData.js";
 import MiniLineChart from "./MiniLineChart.jsx";
 import SectionTitle from "./SectionTitle.jsx";
 
-export default function TravEraCaseStudy() {
+export default function TravEraCaseStudy({ sectionId = "travera" }) {
   return (
-    <section id="travera" className="section-offset section-panel dark-band">
+    <section id={sectionId || undefined} className="section-offset section-panel dark-band">
       <div className="absolute inset-0 dark-grid opacity-[0.38]" />
       <div className="section-blob left-[-8rem] top-24 h-96 w-96 bg-violetAccent/25" />
       <div className="section-blob right-[-9rem] top-1/3 h-[28rem] w-[28rem] bg-skyAccent/20" />
@@ -113,9 +113,9 @@ function FlowCard({ flow, index }) {
           <div key={`${flow.title}-${step}`} className="flex items-center gap-2">
             <span className="rounded-xl border border-purple-300/20 bg-[#111018] px-3 py-2 text-xs font-bold text-slate-200">{step}</span>
             {stepIndex < flow.steps.length - 1 ? (
-              <motion.span animate={{ x: [0, 4, 0] }} transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}>
+              <span>
                 <ArrowRight size={14} className="text-cyan-300" />
-              </motion.span>
+              </span>
             ) : null}
           </div>
         ))}
@@ -151,10 +151,8 @@ function TravEraProductConsole() {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-[1.05fr_0.95fr]">
-          <motion.div
+          <div
             className="rounded-[1.55rem] bg-gradient-to-br from-violetAccent via-royal to-skyAccent p-5 text-white shadow-premium"
-            animate={{ y: [0, -7, 0] }}
-            transition={{ duration: 5.4, repeat: Infinity, ease: "easeInOut" }}
           >
             <div className="flex items-center justify-between">
               <Bot size={24} />
@@ -162,7 +160,7 @@ function TravEraProductConsole() {
             </div>
             <h4 className="mt-8 text-2xl font-black leading-none sm:text-3xl">Smart Trip Plan</h4>
             <p className="mt-2 text-sm font-bold text-cyan-50/80">Personalized recommendations, vendors, events, and route logic.</p>
-          </motion.div>
+          </div>
 
           <div className="grid gap-4">
             <Widget Icon={DollarSign} label="Vendor Bid" value="$420 offer" />

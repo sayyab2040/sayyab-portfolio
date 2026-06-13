@@ -12,9 +12,9 @@ const metrics = [
   ["API Checks", "50+", "text-violetAccent"]
 ];
 
-export default function QATesting() {
+export default function QATesting({ sectionId = "qa" }) {
   return (
-    <section id="qa" className="section-offset section-panel light-band">
+    <section id={sectionId || undefined} className="section-offset section-panel light-band">
       <div className="absolute inset-0 animated-grid opacity-[0.30]" />
       <div className="absolute inset-0 wave-lines opacity-[0.10]" />
       <div className="section-blob right-[-8rem] top-20 h-80 w-80 bg-purpleAccent/20" />

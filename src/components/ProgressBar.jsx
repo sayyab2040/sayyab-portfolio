@@ -18,9 +18,9 @@ export default function ProgressBar({ value = 85, label = "", showValue = true, 
       )}
       <div className="h-2 w-full overflow-hidden rounded-full border border-purple-400/25 bg-[#111018]">
         <motion.div
-          className={`progress-fill h-full rounded-full bg-gradient-to-r ${colorMap[color]} shadow-[0_0_16px_rgba(34,211,238,0.28)]`}
-          initial={{ width: 0 }}
-          whileInView={{ width: `${value}%` }}
+          className={`progress-fill h-full origin-left rounded-full bg-gradient-to-r ${colorMap[color]} shadow-[0_0_10px_rgba(34,211,238,0.22)]`}
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: value / 100 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         />

@@ -30,8 +30,9 @@ export default function Hero() {
             <div className="relative z-10">
               <motion.div
                 className="inline-flex items-center gap-3"
-                animate={{ y: [0, -4, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45, ease: "easeOut" }}
               >
                 <span className="tech-icon-capsule flex h-11 w-11 items-center justify-center rounded-2xl">
                   <Code2 size={19} />
@@ -42,7 +43,8 @@ export default function Hero() {
               <h1 className="hero-title mt-5 max-w-full break-words font-display font-black text-white text-balance">
                 <span className="block text-white">Hi, I&apos;m</span>
                 <span className="block text-[#FACC15]">Sayyab Ashraf.</span>
-            </h1>
+                <span className="sr-only">Software Engineer</span>
+              </h1>
 
               <p className="mt-3 max-w-full break-words text-balance font-display text-[1rem] font-black leading-snug text-[#050505] sm:text-xl xl:text-[1.25rem]">
                 Full-Stack Developer <span className="text-[#FACC15]">&bull;</span> QA Automation <span className="text-[#7C3AED]">&bull;</span> DevOps

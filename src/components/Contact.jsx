@@ -6,7 +6,7 @@ import SectionTitle from "./SectionTitle.jsx";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mojzpyzq";
 
-export default function Contact() {
+export default function Contact({ sectionId = "contact" }) {
   const [status, setStatus] = useState("idle");
 
   const handleSubmit = async (e) => {
@@ -37,7 +37,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-offset section-panel dark-band">
+    <section id={sectionId || undefined} className="section-offset section-panel dark-band">
       <div className="absolute inset-0 dark-grid opacity-[0.36]" />
       <div className="section-blob left-[-8rem] top-24 h-96 w-96 bg-purpleAccent/25" />
       <div className="section-blob right-[-8rem] bottom-20 h-96 w-96 bg-skyAccent/20" />
@@ -157,25 +157,21 @@ function ContactNetwork() {
       <div className="absolute bottom-14 left-24 h-px w-[48%] bg-gradient-to-r from-purpleAccent via-skyAccent to-transparent" />
       <div className="absolute left-1/2 top-1/2 h-24 w-px -translate-y-1/2 bg-gradient-to-b from-transparent via-cyan-300/50 to-transparent" />
 
-      <motion.div
+      <div
         className="absolute right-5 top-5 rounded-[1.35rem] border border-cyan-300/20 bg-[#0B0712] p-4 shadow-premium"
-        animate={{ y: [0, -7, 0] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
       >
         <MessageCircle className="text-cyan-200" size={21} />
         <p className="mt-3 text-sm font-black text-white">Recruiter Form</p>
         <p className="mt-1 text-xs font-semibold text-slate-500">Message node</p>
-      </motion.div>
+      </div>
 
-      <motion.div
+      <div
         className="absolute bottom-5 left-5 rounded-[1.35rem] border border-purple-300/20 bg-[#0B0712] p-4 shadow-premium"
-        animate={{ y: [0, 7, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
         <Mail className="text-teal-200" size={21} />
         <p className="mt-3 text-sm font-black text-white">Sayyab Ashraf</p>
         <p className="mt-1 text-xs font-semibold text-slate-500">Software Engineer</p>
-      </motion.div>
+      </div>
 
       <div className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[1.5rem] bg-gradient-to-br from-violetAccent via-royal to-tealAccent text-white shadow-glow">
         <Sparkles size={24} />
