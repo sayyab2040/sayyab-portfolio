@@ -1,0 +1,446 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/Contact.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=cebbdec0"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+var _s = $RefreshSig$();
+import { motion } from "/node_modules/.vite/deps/framer-motion.js?v=cebbdec0";
+import { Mail, MessageCircle, Send, Share2, Sparkles } from "/node_modules/.vite/deps/lucide-react.js?v=cebbdec0";
+import __vite__cjsImport5_react from "/node_modules/.vite/deps/react.js?v=cebbdec0"; const useState = __vite__cjsImport5_react["useState"];
+import { contactDetails } from "/src/data/portfolioData.js";
+import SectionTitle from "/src/components/SectionTitle.jsx?t=1780852389327";
+export default function Contact() {
+  _s();
+  const [sent, setSent] = useState(false);
+  function handleSubmit(event) {
+    event.preventDefault();
+    setSent(true);
+  }
+  return /* @__PURE__ */ jsxDEV("section", { id: "contact", className: "section-offset section-panel dark-band", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-0 dark-grid opacity-[0.36]" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+      lineNumber: 36,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "section-blob left-[-8rem] top-24 h-96 w-96 bg-purpleAccent/25" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+      lineNumber: 37,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "section-blob right-[-8rem] bottom-20 h-96 w-96 bg-skyAccent/20" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+      lineNumber: 38,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "section-shell", children: [
+      /* @__PURE__ */ jsxDEV(
+        SectionTitle,
+        {
+          eyebrow: "Get In Touch",
+          title: "Let's connect and build reliable software.",
+          subtitle: "Open to software engineering, full-stack development, QA automation, DevOps, internship, remote, and product-focused technical roles.",
+          light: true
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+          lineNumber: 41,
+          columnNumber: 9
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { className: "grid items-start gap-8 lg:grid-cols-[0.92fr_1.08fr]", children: [
+        /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            className: "gradient-border glow-card dark-glass rounded-[2rem] p-6 sm:p-8",
+            initial: { opacity: 0, x: -26 },
+            whileInView: { opacity: 1, x: 0 },
+            viewport: { once: true, amount: 0.25 },
+            transition: { duration: 0.55 },
+            children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "mb-7 flex items-center justify-between", children: [
+                /* @__PURE__ */ jsxDEV("div", { children: [
+                  /* @__PURE__ */ jsxDEV("p", { className: "text-xs font-black uppercase tracking-[0.2em] text-cyan-200", children: "Contact Channels" }, void 0, false, {
+                    fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                    lineNumber: 58,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("h3", { className: "mt-1 text-2xl font-black text-white", children: "Direct links" }, void 0, false, {
+                    fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                    lineNumber: 59,
+                    columnNumber: 17
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                  lineNumber: 57,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV(Share2, { className: "text-teal-200", size: 25 }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                  lineNumber: 61,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                lineNumber: 56,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "grid gap-4", children: contactDetails.map(({ label, value, href, Icon }, index) => {
+                const Wrapper = href ? "a" : "div";
+                return /* @__PURE__ */ jsxDEV(
+                  motion.div,
+                  {
+                    initial: { opacity: 0, y: 12 },
+                    whileInView: { opacity: 1, y: 0 },
+                    viewport: { once: true },
+                    transition: { duration: 0.35, delay: index * 0.04 },
+                    whileHover: href ? { x: 6 } : void 0,
+                    children: /* @__PURE__ */ jsxDEV(
+                      Wrapper,
+                      {
+                        className: "group flex items-center gap-4 rounded-[1.35rem] border border-cyan-300/20 bg-[#0A0A12] p-4 shadow-premium transition hover:border-amber/50 hover:bg-[#11111A]",
+                        href: href || void 0,
+                        target: href?.startsWith("http") ? "_blank" : void 0,
+                        rel: href?.startsWith("http") ? "noreferrer" : void 0,
+                        children: [
+                          /* @__PURE__ */ jsxDEV("span", { className: "flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-violetAccent via-royal to-tealAccent text-white shadow-cyan", children: /* @__PURE__ */ jsxDEV(Icon, { size: 19 }, void 0, false, {
+                            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                            lineNumber: 83,
+                            columnNumber: 25
+                          }, this) }, void 0, false, {
+                            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                            lineNumber: 82,
+                            columnNumber: 23
+                          }, this),
+                          /* @__PURE__ */ jsxDEV("span", { className: "min-w-0", children: [
+                            /* @__PURE__ */ jsxDEV("span", { className: "block text-[0.64rem] font-black uppercase tracking-[0.18em] text-slate-500", children: label }, void 0, false, {
+                              fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                              lineNumber: 86,
+                              columnNumber: 25
+                            }, this),
+                            /* @__PURE__ */ jsxDEV("span", { className: "mt-1 block break-words text-sm font-bold text-slate-200 group-hover:text-cyan-100", children: value }, void 0, false, {
+                              fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                              lineNumber: 87,
+                              columnNumber: 25
+                            }, this)
+                          ] }, void 0, true, {
+                            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                            lineNumber: 85,
+                            columnNumber: 23
+                          }, this)
+                        ]
+                      },
+                      void 0,
+                      true,
+                      {
+                        fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                        lineNumber: 76,
+                        columnNumber: 21
+                      },
+                      this
+                    )
+                  },
+                  label,
+                  false,
+                  {
+                    fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                    lineNumber: 68,
+                    columnNumber: 19
+                  },
+                  this
+                );
+              }) }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                lineNumber: 64,
+                columnNumber: 13
+              }, this)
+            ]
+          },
+          void 0,
+          true,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+            lineNumber: 49,
+            columnNumber: 11
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV(
+          motion.form,
+          {
+            className: "gradient-border glow-card dark-glass-strong rounded-[2rem] p-5 sm:p-6",
+            onSubmit: handleSubmit,
+            initial: { opacity: 0, x: 26 },
+            whileInView: { opacity: 1, x: 0 },
+            viewport: { once: true, amount: 0.25 },
+            transition: { duration: 0.55 },
+            children: [
+              /* @__PURE__ */ jsxDEV(ContactNetwork, {}, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                lineNumber: 104,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "mt-6 grid gap-4 sm:grid-cols-2", children: [
+                /* @__PURE__ */ jsxDEV(Field, { label: "Your Name", name: "name", autoComplete: "name" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                  lineNumber: 107,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV(Field, { label: "Your Email", name: "email", type: "email", autoComplete: "email" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                  lineNumber: 108,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                lineNumber: 106,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "mt-4", children: /* @__PURE__ */ jsxDEV(Field, { label: "Message Subject", name: "subject" }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                lineNumber: 111,
+                columnNumber: 15
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                lineNumber: 110,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("label", { className: "mt-4 grid gap-2", children: [
+                /* @__PURE__ */ jsxDEV("span", { className: "text-sm font-black text-slate-200", children: "Message Content" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                  lineNumber: 114,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV(
+                  "textarea",
+                  {
+                    className: "form-field min-h-36 resize-y",
+                    name: "message",
+                    required: true,
+                    placeholder: "Write your message detail here..."
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                    lineNumber: 115,
+                    columnNumber: 15
+                  },
+                  this
+                )
+              ] }, void 0, true, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                lineNumber: 113,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("button", { className: "primary-button mt-5 w-full sm:w-auto", type: "submit", children: [
+                "Send Message ",
+                /* @__PURE__ */ jsxDEV(Send, { size: 16 }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                  lineNumber: 124,
+                  columnNumber: 28
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                lineNumber: 123,
+                columnNumber: 13
+              }, this),
+              sent ? /* @__PURE__ */ jsxDEV("p", { className: "mt-4 rounded-2xl border border-emerald/25 bg-emerald/10 px-4 py-3 text-sm font-bold text-emerald", children: "Message processed locally. Please send through email or the provided contact channels for delivery." }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+                lineNumber: 128,
+                columnNumber: 13
+              }, this) : null
+            ]
+          },
+          void 0,
+          true,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+            lineNumber: 96,
+            columnNumber: 11
+          },
+          this
+        )
+      ] }, void 0, true, {
+        fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+        lineNumber: 48,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+      lineNumber: 40,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+    lineNumber: 35,
+    columnNumber: 5
+  }, this);
+}
+_s(Contact, "w1r8qcELTw7JaSiaZyfNUqRzIeA=");
+_c = Contact;
+function ContactNetwork() {
+  return /* @__PURE__ */ jsxDEV("div", { className: "relative min-h-60 overflow-hidden rounded-[1.6rem] border border-cyan-300/20 bg-[#050505] p-5 dark-grid", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "absolute left-10 top-16 h-px w-[64%] bg-gradient-to-r from-skyAccent via-tealAccent to-transparent" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+      lineNumber: 142,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "absolute bottom-14 left-24 h-px w-[48%] bg-gradient-to-r from-purpleAccent via-skyAccent to-transparent" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+      lineNumber: 143,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "absolute left-1/2 top-1/2 h-24 w-px -translate-y-1/2 bg-gradient-to-b from-transparent via-cyan-300/50 to-transparent" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+      lineNumber: 144,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(
+      motion.div,
+      {
+        className: "absolute right-5 top-5 rounded-[1.35rem] border border-cyan-300/20 bg-[#0A0A12] p-4 shadow-premium",
+        animate: { y: [0, -7, 0] },
+        transition: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+        children: [
+          /* @__PURE__ */ jsxDEV(MessageCircle, { className: "text-cyan-200", size: 21 }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+            lineNumber: 151,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { className: "mt-3 text-sm font-black text-white", children: "Recruiter Form" }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+            lineNumber: 152,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-xs font-semibold text-slate-500", children: "Message node" }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+            lineNumber: 153,
+            columnNumber: 9
+          }, this)
+        ]
+      },
+      void 0,
+      true,
+      {
+        fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+        lineNumber: 146,
+        columnNumber: 7
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV(
+      motion.div,
+      {
+        className: "absolute bottom-5 left-5 rounded-[1.35rem] border border-purple-300/20 bg-[#0A0A12] p-4 shadow-premium",
+        animate: { y: [0, 7, 0] },
+        transition: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+        children: [
+          /* @__PURE__ */ jsxDEV(Mail, { className: "text-teal-200", size: 21 }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+            lineNumber: 161,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { className: "mt-3 text-sm font-black text-white", children: "Sayyab Ashraf" }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+            lineNumber: 162,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-xs font-semibold text-slate-500", children: "Software Engineer" }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+            lineNumber: 163,
+            columnNumber: 9
+          }, this)
+        ]
+      },
+      void 0,
+      true,
+      {
+        fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+        lineNumber: 156,
+        columnNumber: 7
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV("div", { className: "absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[1.5rem] bg-gradient-to-br from-violetAccent via-royal to-tealAccent text-white shadow-glow", children: /* @__PURE__ */ jsxDEV(Sparkles, { size: 24 }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+      lineNumber: 167,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+      lineNumber: 166,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+    lineNumber: 141,
+    columnNumber: 5
+  }, this);
+}
+_c2 = ContactNetwork;
+function Field({ label, name, type = "text", autoComplete }) {
+  return /* @__PURE__ */ jsxDEV("label", { className: "grid gap-2", children: [
+    /* @__PURE__ */ jsxDEV("span", { className: "text-sm font-black text-slate-200", children: label }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+      lineNumber: 176,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(
+      "input",
+      {
+        className: "form-field",
+        name,
+        type,
+        required: true,
+        autoComplete,
+        placeholder: label
+      },
+      void 0,
+      false,
+      {
+        fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+        lineNumber: 177,
+        columnNumber: 7
+      },
+      this
+    )
+  ] }, void 0, true, {
+    fileName: "C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx",
+    lineNumber: 175,
+    columnNumber: 5
+  }, this);
+}
+_c3 = Field;
+var _c, _c2, _c3;
+$RefreshReg$(_c, "Contact");
+$RefreshReg$(_c2, "ContactNetwork");
+$RefreshReg$(_c3, "Field");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/HP/Desktop/portfolio/src/components/Contact.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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YUFBQU4sS0FBQTtBQUFBLGFBQUFLLEtBQUEiLCJuYW1lcyI6WyJtb3Rpb24iLCJNYWlsIiwiTWVzc2FnZUNpcmNsZSIsIlNlbmQiLCJTaGFyZTIiLCJTcGFya2xlcyIsInVzZVN0YXRlIiwiY29udGFjdERldGFpbHMiLCJTZWN0aW9uVGl0bGUiLCJDb250YWN0IiwiX3MiLCJzZW50Iiwic2V0U2VudCIsImhhbmRsZVN1Ym1pdCIsImV2ZW50IiwicHJldmVudERlZmF1bHQiLCJvcGFjaXR5IiwieCIsIm9uY2UiLCJhbW91bnQiLCJkdXJhdGlvbiIsIm1hcCIsImxhYmVsIiwidmFsdWUiLCJocmVmIiwiSWNvbiIsImluZGV4IiwiV3JhcHBlciIsInkiLCJkZWxheSIsInVuZGVmaW5lZCIsInN0YXJ0c1dpdGgiLCJDb250YWN0TmV0d29yayIsInJlcGVhdCIsIkluZmluaXR5IiwiZWFzZSIsIl9jMiIsIkZpZWxkIiwibmFtZSIsInR5cGUiLCJhdXRvQ29tcGxldGUiLCJfYzMiLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJDb250YWN0LmpzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBtb3Rpb24gfSBmcm9tIFwiZnJhbWVyLW1vdGlvblwiO1xuaW1wb3J0IHsgTWFpbCwgTWVzc2FnZUNpcmNsZSwgU2VuZCwgU2hhcmUyLCBTcGFya2xlcyB9IGZyb20gXCJsdWNpZGUtcmVhY3RcIjtcbmltcG9ydCB7IHVzZVN0YXRlIH0gZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBjb250YWN0RGV0YWlscyB9IGZyb20gXCIuLi9kYXRhL3BvcnRmb2xpb0RhdGEuanNcIjtcbmltcG9ydCBTZWN0aW9uVGl0bGUgZnJvbSBcIi4vU2VjdGlvblRpdGxlLmpzeFwiO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBDb250YWN0KCkge1xuICBjb25zdCBbc2VudCwgc2V0U2VudF0gPSB1c2VTdGF0ZShmYWxzZSk7XG5cbiAgZnVuY3Rpb24gaGFuZGxlU3VibWl0KGV2ZW50KSB7XG4gICAgZXZlbnQucHJldmVudERlZmF1bHQoKTtcbiAgICBzZXRTZW50KHRydWUpO1xuICB9XG5cbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBpZD1cImNvbnRhY3RcIiBjbGFzc05hbWU9XCJzZWN0aW9uLW9mZnNldCBzZWN0aW9uLXBhbmVsIGRhcmstYmFuZFwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBpbnNldC0wIGRhcmstZ3JpZCBvcGFjaXR5LVswLjM2XVwiIC8+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInNlY3Rpb24tYmxvYiBsZWZ0LVstOHJlbV0gdG9wLTI0IGgtOTYgdy05NiBiZy1wdXJwbGVBY2NlbnQvMjVcIiAvPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJzZWN0aW9uLWJsb2IgcmlnaHQtWy04cmVtXSBib3R0b20tMjAgaC05NiB3LTk2IGJnLXNreUFjY2VudC8yMFwiIC8+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwic2VjdGlvbi1zaGVsbFwiPlxuICAgICAgICA8U2VjdGlvblRpdGxlXG4gICAgICAgICAgZXllYnJvdz1cIkdldCBJbiBUb3VjaFwiXG4gICAgICAgICAgdGl0bGU9XCJMZXQncyBjb25uZWN0IGFuZCBidWlsZCByZWxpYWJsZSBzb2Z0d2FyZS5cIlxuICAgICAgICAgIHN1YnRpdGxlPVwiT3BlbiB0byBzb2Z0d2FyZSBlbmdpbmVlcmluZywgZnVsbC1zdGFjayBkZXZlbG9wbWVudCwgUUEgYXV0b21hdGlvbiwgRGV2T3BzLCBpbnRlcm5zaGlwLCByZW1vdGUsIGFuZCBwcm9kdWN0LWZvY3VzZWQgdGVjaG5pY2FsIHJvbGVzLlwiXG4gICAgICAgICAgbGlnaHRcbiAgICAgICAgLz5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgaXRlbXMtc3RhcnQgZ2FwLTggbGc6Z3JpZC1jb2xzLVswLjkyZnJfMS4wOGZyXVwiPlxuICAgICAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgICAgICBjbGFzc05hbWU9XCJncmFkaWVudC1ib3JkZXIgZ2xvdy1jYXJkIGRhcmstZ2xhc3Mgcm91bmRlZC1bMnJlbV0gcC02IHNtOnAtOFwiXG4gICAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHg6IC0yNiB9fVxuICAgICAgICAgICAgd2hpbGVJblZpZXc9e3sgb3BhY2l0eTogMSwgeDogMCB9fVxuICAgICAgICAgICAgdmlld3BvcnQ9e3sgb25jZTogdHJ1ZSwgYW1vdW50OiAwLjI1IH19XG4gICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjU1IH19XG4gICAgICAgICAgPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYi03IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlblwiPlxuICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteHMgZm9udC1ibGFjayB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMmVtXSB0ZXh0LWN5YW4tMjAwXCI+Q29udGFjdCBDaGFubmVsczwvcD5cbiAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwibXQtMSB0ZXh0LTJ4bCBmb250LWJsYWNrIHRleHQtd2hpdGVcIj5EaXJlY3QgbGlua3M8L2gzPlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPFNoYXJlMiBjbGFzc05hbWU9XCJ0ZXh0LXRlYWwtMjAwXCIgc2l6ZT17MjV9IC8+XG4gICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdhcC00XCI+XG4gICAgICAgICAgICAgIHtjb250YWN0RGV0YWlscy5tYXAoKHsgbGFiZWwsIHZhbHVlLCBocmVmLCBJY29uIH0sIGluZGV4KSA9PiB7XG4gICAgICAgICAgICAgICAgY29uc3QgV3JhcHBlciA9IGhyZWYgPyBcImFcIiA6IFwiZGl2XCI7XG4gICAgICAgICAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgICAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgICAgICAgICAgICAgIGtleT17bGFiZWx9XG4gICAgICAgICAgICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgeTogMTIgfX1cbiAgICAgICAgICAgICAgICAgICAgd2hpbGVJblZpZXc9e3sgb3BhY2l0eTogMSwgeTogMCB9fVxuICAgICAgICAgICAgICAgICAgICB2aWV3cG9ydD17eyBvbmNlOiB0cnVlIH19XG4gICAgICAgICAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuMzUsIGRlbGF5OiBpbmRleCAqIDAuMDQgfX1cbiAgICAgICAgICAgICAgICAgICAgd2hpbGVIb3Zlcj17aHJlZiA/IHsgeDogNiB9IDogdW5kZWZpbmVkfVxuICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICA8V3JhcHBlclxuICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cImdyb3VwIGZsZXggaXRlbXMtY2VudGVyIGdhcC00IHJvdW5kZWQtWzEuMzVyZW1dIGJvcmRlciBib3JkZXItY3lhbi0zMDAvMjAgYmctWyMwQTBBMTJdIHAtNCBzaGFkb3ctcHJlbWl1bSB0cmFuc2l0aW9uIGhvdmVyOmJvcmRlci1hbWJlci81MCBob3ZlcjpiZy1bIzExMTExQV1cIlxuICAgICAgICAgICAgICAgICAgICAgIGhyZWY9e2hyZWYgfHwgdW5kZWZpbmVkfVxuICAgICAgICAgICAgICAgICAgICAgIHRhcmdldD17aHJlZj8uc3RhcnRzV2l0aChcImh0dHBcIikgPyBcIl9ibGFua1wiIDogdW5kZWZpbmVkfVxuICAgICAgICAgICAgICAgICAgICAgIHJlbD17aHJlZj8uc3RhcnRzV2l0aChcImh0dHBcIikgPyBcIm5vcmVmZXJyZXJcIiA6IHVuZGVmaW5lZH1cbiAgICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImZsZXggaC0xMiB3LTEyIHNocmluay0wIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciByb3VuZGVkLTJ4bCBiZy1ncmFkaWVudC10by1iciBmcm9tLXZpb2xldEFjY2VudCB2aWEtcm95YWwgdG8tdGVhbEFjY2VudCB0ZXh0LXdoaXRlIHNoYWRvdy1jeWFuXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8SWNvbiBzaXplPXsxOX0gLz5cbiAgICAgICAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwibWluLXctMFwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiYmxvY2sgdGV4dC1bMC42NHJlbV0gZm9udC1ibGFjayB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMThlbV0gdGV4dC1zbGF0ZS01MDBcIj57bGFiZWx9PC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwibXQtMSBibG9jayBicmVhay13b3JkcyB0ZXh0LXNtIGZvbnQtYm9sZCB0ZXh0LXNsYXRlLTIwMCBncm91cC1ob3Zlcjp0ZXh0LWN5YW4tMTAwXCI+e3ZhbHVlfTwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgIDwvV3JhcHBlcj5cbiAgICAgICAgICAgICAgICAgIDwvbW90aW9uLmRpdj5cbiAgICAgICAgICAgICAgICApO1xuICAgICAgICAgICAgICB9KX1cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvbW90aW9uLmRpdj5cblxuICAgICAgICAgIDxtb3Rpb24uZm9ybVxuICAgICAgICAgICAgY2xhc3NOYW1lPVwiZ3JhZGllbnQtYm9yZGVyIGdsb3ctY2FyZCBkYXJrLWdsYXNzLXN0cm9uZyByb3VuZGVkLVsycmVtXSBwLTUgc206cC02XCJcbiAgICAgICAgICAgIG9uU3VibWl0PXtoYW5kbGVTdWJtaXR9XG4gICAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHg6IDI2IH19XG4gICAgICAgICAgICB3aGlsZUluVmlldz17eyBvcGFjaXR5OiAxLCB4OiAwIH19XG4gICAgICAgICAgICB2aWV3cG9ydD17eyBvbmNlOiB0cnVlLCBhbW91bnQ6IDAuMjUgfX1cbiAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuNTUgfX1cbiAgICAgICAgICA+XG4gICAgICAgICAgICA8Q29udGFjdE5ldHdvcmsgLz5cblxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC02IGdyaWQgZ2FwLTQgc206Z3JpZC1jb2xzLTJcIj5cbiAgICAgICAgICAgICAgPEZpZWxkIGxhYmVsPVwiWW91ciBOYW1lXCIgbmFtZT1cIm5hbWVcIiBhdXRvQ29tcGxldGU9XCJuYW1lXCIgLz5cbiAgICAgICAgICAgICAgPEZpZWxkIGxhYmVsPVwiWW91ciBFbWFpbFwiIG5hbWU9XCJlbWFpbFwiIHR5cGU9XCJlbWFpbFwiIGF1dG9Db21wbGV0ZT1cImVtYWlsXCIgLz5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC00XCI+XG4gICAgICAgICAgICAgIDxGaWVsZCBsYWJlbD1cIk1lc3NhZ2UgU3ViamVjdFwiIG5hbWU9XCJzdWJqZWN0XCIgLz5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT1cIm10LTQgZ3JpZCBnYXAtMlwiPlxuICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0ZXh0LXNtIGZvbnQtYmxhY2sgdGV4dC1zbGF0ZS0yMDBcIj5NZXNzYWdlIENvbnRlbnQ8L3NwYW4+XG4gICAgICAgICAgICAgIDx0ZXh0YXJlYVxuICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cImZvcm0tZmllbGQgbWluLWgtMzYgcmVzaXplLXlcIlxuICAgICAgICAgICAgICAgIG5hbWU9XCJtZXNzYWdlXCJcbiAgICAgICAgICAgICAgICByZXF1aXJlZFxuICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPVwiV3JpdGUgeW91ciBtZXNzYWdlIGRldGFpbCBoZXJlLi4uXCJcbiAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgIDwvbGFiZWw+XG5cbiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwicHJpbWFyeS1idXR0b24gbXQtNSB3LWZ1bGwgc206dy1hdXRvXCIgdHlwZT1cInN1Ym1pdFwiPlxuICAgICAgICAgICAgICBTZW5kIE1lc3NhZ2UgPFNlbmQgc2l6ZT17MTZ9IC8+XG4gICAgICAgICAgICA8L2J1dHRvbj5cblxuICAgICAgICAgICAge3NlbnQgPyAoXG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cIm10LTQgcm91bmRlZC0yeGwgYm9yZGVyIGJvcmRlci1lbWVyYWxkLzI1IGJnLWVtZXJhbGQvMTAgcHgtNCBweS0zIHRleHQtc20gZm9udC1ib2xkIHRleHQtZW1lcmFsZFwiPlxuICAgICAgICAgICAgICAgIE1lc3NhZ2UgcHJvY2Vzc2VkIGxvY2FsbHkuIFBsZWFzZSBzZW5kIHRocm91Z2ggZW1haWwgb3IgdGhlIHByb3ZpZGVkIGNvbnRhY3QgY2hhbm5lbHMgZm9yIGRlbGl2ZXJ5LlxuICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICApIDogbnVsbH1cbiAgICAgICAgICA8L21vdGlvbi5mb3JtPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvc2VjdGlvbj5cbiAgKTtcbn1cblxuZnVuY3Rpb24gQ29udGFjdE5ldHdvcmsoKSB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJyZWxhdGl2ZSBtaW4taC02MCBvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC1bMS42cmVtXSBib3JkZXIgYm9yZGVyLWN5YW4tMzAwLzIwIGJnLVsjMDUwNTA1XSBwLTUgZGFyay1ncmlkXCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGxlZnQtMTAgdG9wLTE2IGgtcHggdy1bNjQlXSBiZy1ncmFkaWVudC10by1yIGZyb20tc2t5QWNjZW50IHZpYS10ZWFsQWNjZW50IHRvLXRyYW5zcGFyZW50XCIgLz5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgYm90dG9tLTE0IGxlZnQtMjQgaC1weCB3LVs0OCVdIGJnLWdyYWRpZW50LXRvLXIgZnJvbS1wdXJwbGVBY2NlbnQgdmlhLXNreUFjY2VudCB0by10cmFuc3BhcmVudFwiIC8+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGxlZnQtMS8yIHRvcC0xLzIgaC0yNCB3LXB4IC10cmFuc2xhdGUteS0xLzIgYmctZ3JhZGllbnQtdG8tYiBmcm9tLXRyYW5zcGFyZW50IHZpYS1jeWFuLTMwMC81MCB0by10cmFuc3BhcmVudFwiIC8+XG5cbiAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgIGNsYXNzTmFtZT1cImFic29sdXRlIHJpZ2h0LTUgdG9wLTUgcm91bmRlZC1bMS4zNXJlbV0gYm9yZGVyIGJvcmRlci1jeWFuLTMwMC8yMCBiZy1bIzBBMEExMl0gcC00IHNoYWRvdy1wcmVtaXVtXCJcbiAgICAgICAgYW5pbWF0ZT17eyB5OiBbMCwgLTcsIDBdIH19XG4gICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDUsIHJlcGVhdDogSW5maW5pdHksIGVhc2U6IFwiZWFzZUluT3V0XCIgfX1cbiAgICAgID5cbiAgICAgICAgPE1lc3NhZ2VDaXJjbGUgY2xhc3NOYW1lPVwidGV4dC1jeWFuLTIwMFwiIHNpemU9ezIxfSAvPlxuICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC0zIHRleHQtc20gZm9udC1ibGFjayB0ZXh0LXdoaXRlXCI+UmVjcnVpdGVyIEZvcm08L3A+XG4gICAgICAgIDxwIGNsYXNzTmFtZT1cIm10LTEgdGV4dC14cyBmb250LXNlbWlib2xkIHRleHQtc2xhdGUtNTAwXCI+TWVzc2FnZSBub2RlPC9wPlxuICAgICAgPC9tb3Rpb24uZGl2PlxuXG4gICAgICA8bW90aW9uLmRpdlxuICAgICAgICBjbGFzc05hbWU9XCJhYnNvbHV0ZSBib3R0b20tNSBsZWZ0LTUgcm91bmRlZC1bMS4zNXJlbV0gYm9yZGVyIGJvcmRlci1wdXJwbGUtMzAwLzIwIGJnLVsjMEEwQTEyXSBwLTQgc2hhZG93LXByZW1pdW1cIlxuICAgICAgICBhbmltYXRlPXt7IHk6IFswLCA3LCAwXSB9fVxuICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiA2LCByZXBlYXQ6IEluZmluaXR5LCBlYXNlOiBcImVhc2VJbk91dFwiIH19XG4gICAgICA+XG4gICAgICAgIDxNYWlsIGNsYXNzTmFtZT1cInRleHQtdGVhbC0yMDBcIiBzaXplPXsyMX0gLz5cbiAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMyB0ZXh0LXNtIGZvbnQtYmxhY2sgdGV4dC13aGl0ZVwiPlNheXlhYiBBc2hyYWY8L3A+XG4gICAgICAgIDxwIGNsYXNzTmFtZT1cIm10LTEgdGV4dC14cyBmb250LXNlbWlib2xkIHRleHQtc2xhdGUtNTAwXCI+U29mdHdhcmUgRW5naW5lZXI8L3A+XG4gICAgICA8L21vdGlvbi5kaXY+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgbGVmdC0xLzIgdG9wLTEvMiBmbGV4IGgtMTYgdy0xNiAtdHJhbnNsYXRlLXgtMS8yIC10cmFuc2xhdGUteS0xLzIgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQtWzEuNXJlbV0gYmctZ3JhZGllbnQtdG8tYnIgZnJvbS12aW9sZXRBY2NlbnQgdmlhLXJveWFsIHRvLXRlYWxBY2NlbnQgdGV4dC13aGl0ZSBzaGFkb3ctZ2xvd1wiPlxuICAgICAgICA8U3BhcmtsZXMgc2l6ZT17MjR9IC8+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgKTtcbn1cblxuZnVuY3Rpb24gRmllbGQoeyBsYWJlbCwgbmFtZSwgdHlwZSA9IFwidGV4dFwiLCBhdXRvQ29tcGxldGUgfSkge1xuICByZXR1cm4gKFxuICAgIDxsYWJlbCBjbGFzc05hbWU9XCJncmlkIGdhcC0yXCI+XG4gICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0ZXh0LXNtIGZvbnQtYmxhY2sgdGV4dC1zbGF0ZS0yMDBcIj57bGFiZWx9PC9zcGFuPlxuICAgICAgPGlucHV0XG4gICAgICAgIGNsYXNzTmFtZT1cImZvcm0tZmllbGRcIlxuICAgICAgICBuYW1lPXtuYW1lfVxuICAgICAgICB0eXBlPXt0eXBlfVxuICAgICAgICByZXF1aXJlZFxuICAgICAgICBhdXRvQ29tcGxldGU9e2F1dG9Db21wbGV0ZX1cbiAgICAgICAgcGxhY2Vob2xkZXI9e2xhYmVsfVxuICAgICAgLz5cbiAgICA8L2xhYmVsPlxuICApO1xufVxuIl0sImZpbGUiOiJDOi9Vc2Vycy9IUC9EZXNrdG9wL3BvcnRmb2xpby9zcmMvY29tcG9uZW50cy9Db250YWN0LmpzeCJ9

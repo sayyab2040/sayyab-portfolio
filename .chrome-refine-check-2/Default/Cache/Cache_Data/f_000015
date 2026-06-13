@@ -1,0 +1,361 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/ProfileShowcase.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=cebbdec0"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import { motion } from "/node_modules/.vite/deps/framer-motion.js?v=cebbdec0";
+import { Cloud, Code2, ShieldCheck, Workflow } from "/node_modules/.vite/deps/lucide-react.js?v=cebbdec0";
+const photo = "/assets/profile-orbit.png";
+const badges = [
+  { label: "Full-Stack", Icon: Code2, className: "-left-2 top-[24%] lg:-left-5", delay: 0 },
+  { label: "QA Automation", Icon: ShieldCheck, className: "right-0 top-[24%] lg:-right-4", delay: 0.18 },
+  { label: "DevOps", Icon: Cloud, className: "left-1 bottom-[28%] lg:-left-2", delay: 0.36 },
+  { label: "Product Ops", Icon: Workflow, className: "right-1 bottom-[21%] lg:-right-3", delay: 0.54 }
+];
+const particles = Array.from({ length: 18 }, (_, index) => ({
+  id: index,
+  left: `${(index * 29 + 8) % 94}%`,
+  top: `${(index * 41 + 13) % 88}%`,
+  delay: index * 0.16,
+  size: index % 5 === 0 ? "h-1.5 w-1.5" : "h-1 w-1",
+  tone: index % 5 === 0 ? "bg-amber/80 shadow-[0_0_16px_rgba(250,204,21,0.75)]" : "bg-cyan-200/75 shadow-[0_0_16px_rgba(34,211,238,0.75)]"
+}));
+export default function ProfileShowcase() {
+  return /* @__PURE__ */ jsxDEV(
+    motion.div,
+    {
+      className: "relative z-10 mx-auto flex w-full max-w-[36rem] items-center justify-center px-2 py-4 lg:-mt-8",
+      initial: { opacity: 0, x: 42 },
+      animate: { opacity: 1, x: 0 },
+      transition: { duration: 0.82, ease: [0.22, 1, 0.36, 1] },
+      style: { perspective: 1e3 },
+      children: /* @__PURE__ */ jsxDEV("div", { className: "relative flex h-[29rem] w-full max-w-[22rem] items-center justify-center sm:h-[35rem] sm:max-w-[34rem] lg:h-[min(38.5rem,calc(100vh-8rem))] lg:max-w-[36rem]", children: [
+        /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            "aria-hidden": true,
+            className: "absolute h-[23rem] w-[23rem] rounded-full bg-gradient-to-br from-purpleAccent/28 via-skyAccent/18 to-amber/10 blur-3xl sm:h-[32rem] sm:w-[32rem]",
+            animate: { opacity: [0.34, 0.62, 0.34], scale: [0.98, 1.05, 0.98] },
+            transition: { duration: 6.5, repeat: Infinity, ease: "easeInOut" }
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+            lineNumber: 51,
+            columnNumber: 9
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV("div", { "aria-hidden": true, className: "absolute h-[18rem] w-[18rem] rounded-full bg-[radial-gradient(circle,rgba(34,211,238,0.12),rgba(8,0,16,0.92)_58%,transparent_72%)] blur-sm sm:h-[29rem] sm:w-[29rem]" }, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+          lineNumber: 57,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            "aria-hidden": true,
+            className: "absolute h-[18rem] w-[18rem] rounded-full border border-cyan-300/45 shadow-[0_0_34px_rgba(34,211,238,0.22)] sm:h-[27rem] sm:w-[27rem]",
+            animate: { opacity: [0.58, 1, 0.58], scale: [0.98, 1.02, 0.98] },
+            transition: { duration: 7, repeat: Infinity, ease: "easeInOut" }
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+            lineNumber: 58,
+            columnNumber: 9
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV(
+          "div",
+          {
+            "aria-hidden": true,
+            className: "absolute h-[21rem] w-[21rem] rounded-full border border-purple-400/30 sm:h-[31rem] sm:w-[31rem]"
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+            lineNumber: 64,
+            columnNumber: 9
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV(
+          "div",
+          {
+            "aria-hidden": true,
+            className: "absolute h-[23rem] w-[23rem] rounded-full border border-dashed border-amber/25 sm:h-[34rem] sm:w-[34rem]"
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+            lineNumber: 68,
+            columnNumber: 9
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV(
+          "div",
+          {
+            "aria-hidden": true,
+            className: "absolute h-[16rem] w-[16rem] rounded-full border border-cyan-300/20 sm:h-[23rem] sm:w-[23rem]"
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+            lineNumber: 72,
+            columnNumber: 9
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            "aria-hidden": true,
+            className: "absolute h-[14rem] w-[28rem] -rotate-[13deg] rounded-[50%] border-t border-cyan-200/35 sm:h-[20rem] sm:w-[39rem]",
+            animate: { opacity: [0.45, 0.85, 0.45], y: [0, -5, 0] },
+            transition: { duration: 7.2, repeat: Infinity, ease: "easeInOut" }
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+            lineNumber: 76,
+            columnNumber: 9
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            "aria-hidden": true,
+            className: "absolute h-[13rem] w-[27rem] rotate-[17deg] rounded-[50%] border-b border-purple-400/35 sm:h-[19rem] sm:w-[38rem]",
+            animate: { opacity: [0.36, 0.72, 0.36], y: [0, 5, 0] },
+            transition: { duration: 8.4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+            lineNumber: 82,
+            columnNumber: 9
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV("div", { "aria-hidden": true, className: "dot-matrix absolute right-5 top-10 h-36 w-36 opacity-25 sm:right-10 sm:top-12" }, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+          lineNumber: 89,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { "aria-hidden": true, className: "absolute bottom-8 left-1/2 h-20 w-72 -translate-x-1/2 rounded-full bg-black/60 blur-2xl sm:w-[28rem]" }, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+          lineNumber: 90,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV(
+          "div",
+          {
+            "aria-hidden": true,
+            className: "absolute bottom-10 left-1/2 z-[21] h-20 w-[17rem] -translate-x-1/2 rounded-[50%] border-t border-cyan-200/25 bg-[radial-gradient(ellipse_at_center,rgba(34,211,238,0.22),rgba(124,58,237,0.14)_42%,transparent_72%)] sm:h-24 sm:w-[25rem]"
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+            lineNumber: 91,
+            columnNumber: 9
+          },
+          this
+        ),
+        particles.map(
+          (particle) => /* @__PURE__ */ jsxDEV(
+            motion.span,
+            {
+              "aria-hidden": true,
+              className: `absolute rounded-full ${particle.tone} ${particle.size}`,
+              style: { left: particle.left, top: particle.top },
+              animate: { opacity: [0.12, 0.8, 0.12], y: [0, -14, 0] },
+              transition: { duration: 4.3 + particle.id * 0.08, repeat: Infinity, ease: "easeInOut", delay: particle.delay }
+            },
+            particle.id,
+            false,
+            {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+              lineNumber: 97,
+              columnNumber: 9
+            },
+            this
+          )
+        ),
+        badges.map(
+          ({ label, Icon, className, delay }) => /* @__PURE__ */ jsxDEV(
+            motion.div,
+            {
+              className: `absolute z-30 hidden md:block ${className}`,
+              animate: { y: [0, -9, 0] },
+              transition: { duration: 5.2 + delay, repeat: Infinity, ease: "easeInOut", delay },
+              children: /* @__PURE__ */ jsxDEV("span", { className: "inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-[#08080D] px-3.5 py-2 text-xs font-black text-cyan-50 shadow-lg shadow-black/40", children: [
+                /* @__PURE__ */ jsxDEV(Icon, { size: 14, className: "text-amber" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+                  lineNumber: 115,
+                  columnNumber: 15
+                }, this),
+                label
+              ] }, void 0, true, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+                lineNumber: 114,
+                columnNumber: 13
+              }, this)
+            },
+            label,
+            false,
+            {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+              lineNumber: 108,
+              columnNumber: 9
+            },
+            this
+          )
+        ),
+        /* @__PURE__ */ jsxDEV(
+          motion.img,
+          {
+            src: photo,
+            alt: "Sayyab Ashraf",
+            className: "relative z-20 h-[24rem] w-auto max-w-[22rem] object-contain sm:h-[34rem] sm:max-w-[32rem] lg:h-[min(38rem,calc(100vh-8.4rem))] lg:max-w-[33rem]",
+            style: {
+              WebkitMaskImage: "radial-gradient(ellipse 62% 79% at 50% 39%, #000 0%, #000 71%, rgba(0,0,0,0.86) 82%, rgba(0,0,0,0.32) 93%, transparent 100%)",
+              maskImage: "radial-gradient(ellipse 62% 79% at 50% 39%, #000 0%, #000 71%, rgba(0,0,0,0.86) 82%, rgba(0,0,0,0.32) 93%, transparent 100%)",
+              filter: "drop-shadow(0 0 4px rgba(255,255,255,0.80)) drop-shadow(0 0 18px rgba(34,211,238,0.48)) drop-shadow(0 0 30px rgba(168,85,247,0.26)) drop-shadow(0 28px 48px rgba(0,0,0,0.60))"
+            },
+            initial: { opacity: 0, x: 36, scale: 0.98 },
+            animate: { opacity: 1, x: 0, y: [0, -10, 0], scale: 1 },
+            transition: {
+              opacity: { duration: 0.7, ease: "easeOut" },
+              x: { duration: 0.7, ease: "easeOut" },
+              scale: { duration: 0.7, ease: "easeOut" },
+              y: { duration: 6, repeat: Infinity, ease: "easeInOut" }
+            },
+            whileHover: { rotateX: 3, rotateY: -4, scale: 1.02 }
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+            lineNumber: 121,
+            columnNumber: 9
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV(
+          "div",
+          {
+            "aria-hidden": true,
+            className: "pointer-events-none absolute bottom-3 left-1/2 z-[25] h-28 w-[18rem] -translate-x-1/2 rounded-[50%] bg-[radial-gradient(ellipse_at_center,rgba(5,0,13,0.96)_0%,rgba(5,0,13,0.70)_32%,rgba(5,0,13,0.18)_59%,transparent_74%)] sm:h-32 sm:w-[25rem]"
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+            lineNumber: 144,
+            columnNumber: 9
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            "aria-hidden": true,
+            className: "pointer-events-none absolute bottom-[4.7rem] left-1/2 z-[26] h-px w-[13rem] -translate-x-1/2 bg-gradient-to-r from-transparent via-cyan-200/45 to-transparent sm:bottom-[5.6rem] sm:w-[20rem]",
+            animate: { opacity: [0.42, 0.85, 0.42], scaleX: [0.94, 1.02, 0.94] },
+            transition: { duration: 5.8, repeat: Infinity, ease: "easeInOut" }
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+            lineNumber: 148,
+            columnNumber: 9
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV("div", { className: "absolute -bottom-2 z-30 grid w-full max-w-[21rem] grid-cols-2 gap-2.5 md:hidden", children: badges.map(
+          ({ label, Icon }) => /* @__PURE__ */ jsxDEV(
+            "span",
+            {
+              className: "inline-flex items-center justify-center gap-2 rounded-full border border-cyan-300/25 bg-[#08080D] px-3 py-2 text-[0.68rem] font-black text-cyan-50 shadow-lg",
+              children: [
+                /* @__PURE__ */ jsxDEV(Icon, { size: 13, className: "text-amber" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+                  lineNumber: 161,
+                  columnNumber: 15
+                }, this),
+                label
+              ]
+            },
+            label,
+            true,
+            {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+              lineNumber: 157,
+              columnNumber: 11
+            },
+            this
+          )
+        ) }, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+          lineNumber: 155,
+          columnNumber: 9
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+        lineNumber: 50,
+        columnNumber: 7
+      }, this)
+    },
+    void 0,
+    false,
+    {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx",
+      lineNumber: 43,
+      columnNumber: 5
+    },
+    this
+  );
+}
+_c = ProfileShowcase;
+var _c;
+$RefreshReg$(_c, "ProfileShowcase");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/HP/Desktop/portfolio/src/components/ProfileShowcase.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6IkFBK0JROzs7Ozs7Ozs7Ozs7Ozs7O0FBL0JSLFNBQVNBLGNBQWM7QUFDdkIsU0FBU0MsT0FBT0MsT0FBT0MsYUFBYUMsZ0JBQWdCO0FBRXBELE1BQU1DLFFBQVE7QUFFZCxNQUFNQyxTQUFTO0FBQUEsRUFDYixFQUFFQyxPQUFPLGNBQWNDLE1BQU1OLE9BQU9PLFdBQVcsZ0NBQWdDQyxPQUFPLEVBQUU7QUFBQSxFQUN4RixFQUFFSCxPQUFPLGlCQUFpQkMsTUFBTUwsYUFBYU0sV0FBVyxpQ0FBaUNDLE9BQU8sS0FBSztBQUFBLEVBQ3JHLEVBQUVILE9BQU8sVUFBVUMsTUFBTVAsT0FBT1EsV0FBVyxrQ0FBa0NDLE9BQU8sS0FBSztBQUFBLEVBQ3pGLEVBQUVILE9BQU8sZUFBZUMsTUFBTUosVUFBVUssV0FBVyxvQ0FBb0NDLE9BQU8sS0FBSztBQUFDO0FBR3RHLE1BQU1DLFlBQVlDLE1BQU1DLEtBQUssRUFBRUMsUUFBUSxHQUFHLEdBQUcsQ0FBQ0MsR0FBR0MsV0FBVztBQUFBLEVBQzFEQyxJQUFJRDtBQUFBQSxFQUNKRSxNQUFNLElBQUlGLFFBQVEsS0FBSyxLQUFLLEVBQUU7QUFBQSxFQUM5QkcsS0FBSyxJQUFJSCxRQUFRLEtBQUssTUFBTSxFQUFFO0FBQUEsRUFDOUJOLE9BQU9NLFFBQVE7QUFBQSxFQUNmSSxNQUFNSixRQUFRLE1BQU0sSUFBSSxnQkFBZ0I7QUFBQSxFQUN4Q0ssTUFBTUwsUUFBUSxNQUFNLElBQUksd0RBQXdEO0FBQ2xGLEVBQUU7QUFFRix3QkFBd0JNLGtCQUFrQjtBQUN4QyxTQUNFO0FBQUEsSUFBQyxPQUFPO0FBQUEsSUFBUDtBQUFBLE1BQ0MsV0FBVTtBQUFBLE1BQ1YsU0FBUyxFQUFFQyxTQUFTLEdBQUdDLEdBQUcsR0FBRztBQUFBLE1BQzdCLFNBQVMsRUFBRUQsU0FBUyxHQUFHQyxHQUFHLEVBQUU7QUFBQSxNQUM1QixZQUFZLEVBQUVDLFVBQVUsTUFBTUMsTUFBTSxDQUFDLE1BQU0sR0FBRyxNQUFNLENBQUMsRUFBRTtBQUFBLE1BQ3ZELE9BQU8sRUFBRUMsYUFBYSxJQUFLO0FBQUEsTUFFM0IsaUNBQUMsU0FBSSxXQUFVLGdLQUNiO0FBQUE7QUFBQSxVQUFDLE9BQU87QUFBQSxVQUFQO0FBQUEsWUFDQztBQUFBLFlBQ0EsV0FBVTtBQUFBLFlBQ1YsU0FBUyxFQUFFSixTQUFTLENBQUMsTUFBTSxNQUFNLElBQUksR0FBR0ssT0FBTyxDQUFDLE1BQU0sTUFBTSxJQUFJLEVBQUU7QUFBQSxZQUNsRSxZQUFZLEVBQUVILFVBQVUsS0FBS0ksUUFBUUMsVUFBVUosTUFBTSxZQUFZO0FBQUE7QUFBQSxVQUpuRTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsUUFJcUU7QUFBQSxRQUVyRSx1QkFBQyxTQUFJLGVBQVcsTUFBQyxXQUFVLDBLQUEzQjtBQUFBO0FBQUE7QUFBQTtBQUFBLGVBQWlNO0FBQUEsUUFDak07QUFBQSxVQUFDLE9BQU87QUFBQSxVQUFQO0FBQUEsWUFDQztBQUFBLFlBQ0EsV0FBVTtBQUFBLFlBQ1YsU0FBUyxFQUFFSCxTQUFTLENBQUMsTUFBTSxHQUFHLElBQUksR0FBR0ssT0FBTyxDQUFDLE1BQU0sTUFBTSxJQUFJLEVBQUU7QUFBQSxZQUMvRCxZQUFZLEVBQUVILFVBQVUsR0FBR0ksUUFBUUMsVUFBVUosTUFBTSxZQUFZO0FBQUE7QUFBQSxVQUpqRTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsUUFJbUU7QUFBQSxRQUVuRTtBQUFBLFVBQUM7QUFBQTtBQUFBLFlBQ0M7QUFBQSxZQUNBLFdBQVU7QUFBQTtBQUFBLFVBRlo7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFFBRTZHO0FBQUEsUUFFN0c7QUFBQSxVQUFDO0FBQUE7QUFBQSxZQUNDO0FBQUEsWUFDQSxXQUFVO0FBQUE7QUFBQSxVQUZaO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxRQUVzSDtBQUFBLFFBRXRIO0FBQUEsVUFBQztBQUFBO0FBQUEsWUFDQztBQUFBLFlBQ0EsV0FBVTtBQUFBO0FBQUEsVUFGWjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsUUFFMkc7QUFBQSxRQUUzRztBQUFBLFVBQUMsT0FBTztBQUFBLFVBQVA7QUFBQSxZQUNDO0FBQUEsWUFDQSxXQUFVO0FBQUEsWUFDVixTQUFTLEVBQUVILFNBQVMsQ0FBQyxNQUFNLE1BQU0sSUFBSSxHQUFHUSxHQUFHLENBQUMsR0FBRyxJQUFJLENBQUMsRUFBRTtBQUFBLFlBQ3RELFlBQVksRUFBRU4sVUFBVSxLQUFLSSxRQUFRQyxVQUFVSixNQUFNLFlBQVk7QUFBQTtBQUFBLFVBSm5FO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxRQUlxRTtBQUFBLFFBRXJFO0FBQUEsVUFBQyxPQUFPO0FBQUEsVUFBUDtBQUFBLFlBQ0M7QUFBQSxZQUNBLFdBQVU7QUFBQSxZQUNWLFNBQVMsRUFBRUgsU0FBUyxDQUFDLE1BQU0sTUFBTSxJQUFJLEdBQUdRLEdBQUcsQ0FBQyxHQUFHLEdBQUcsQ0FBQyxFQUFFO0FBQUEsWUFDckQsWUFBWSxFQUFFTixVQUFVLEtBQUtJLFFBQVFDLFVBQVVKLE1BQU0sYUFBYWhCLE9BQU8sSUFBSTtBQUFBO0FBQUEsVUFKL0U7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFFBSWlGO0FBQUEsUUFHakYsdUJBQUMsU0FBSSxlQUFXLE1BQUMsV0FBVSxtRkFBM0I7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQUEwRztBQUFBLFFBQzFHLHVCQUFDLFNBQUksZUFBVyxNQUFDLFdBQVUsMEdBQTNCO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFBaUk7QUFBQSxRQUNqSTtBQUFBLFVBQUM7QUFBQTtBQUFBLFlBQ0M7QUFBQSxZQUNBLFdBQVU7QUFBQTtBQUFBLFVBRlo7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFFBRXVQO0FBQUEsUUFHdFBDLFVBQVVxQjtBQUFBQSxVQUFJLENBQUNDLGFBQ2Q7QUFBQSxZQUFDLE9BQU87QUFBQSxZQUFQO0FBQUEsY0FDQztBQUFBLGNBRUEsV0FBVyx5QkFBeUJBLFNBQVNaLElBQUksSUFBSVksU0FBU2IsSUFBSTtBQUFBLGNBQ2xFLE9BQU8sRUFBRUYsTUFBTWUsU0FBU2YsTUFBTUMsS0FBS2MsU0FBU2QsSUFBSTtBQUFBLGNBQ2hELFNBQVMsRUFBRUksU0FBUyxDQUFDLE1BQU0sS0FBSyxJQUFJLEdBQUdRLEdBQUcsQ0FBQyxHQUFHLEtBQUssQ0FBQyxFQUFFO0FBQUEsY0FDdEQsWUFBWSxFQUFFTixVQUFVLE1BQU1RLFNBQVNoQixLQUFLLE1BQU1ZLFFBQVFDLFVBQVVKLE1BQU0sYUFBYWhCLE9BQU91QixTQUFTdkIsTUFBTTtBQUFBO0FBQUEsWUFKeEd1QixTQUFTaEI7QUFBQUEsWUFGaEI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxVQU1pSDtBQUFBLFFBRWxIO0FBQUEsUUFFQVgsT0FBTzBCO0FBQUFBLFVBQUksQ0FBQyxFQUFFekIsT0FBT0MsTUFBTUMsV0FBV0MsTUFBTSxNQUMzQztBQUFBLFlBQUMsT0FBTztBQUFBLFlBQVA7QUFBQSxjQUVDLFdBQVcsaUNBQWlDRCxTQUFTO0FBQUEsY0FDckQsU0FBUyxFQUFFc0IsR0FBRyxDQUFDLEdBQUcsSUFBSSxDQUFDLEVBQUU7QUFBQSxjQUN6QixZQUFZLEVBQUVOLFVBQVUsTUFBTWYsT0FBT21CLFFBQVFDLFVBQVVKLE1BQU0sYUFBYWhCLE1BQU07QUFBQSxjQUVoRixpQ0FBQyxVQUFLLFdBQVUsNEpBQ2Q7QUFBQSx1Q0FBQyxRQUFLLE1BQU0sSUFBSSxXQUFVLGdCQUExQjtBQUFBO0FBQUE7QUFBQTtBQUFBLHVCQUFzQztBQUFBLGdCQUNyQ0g7QUFBQUEsbUJBRkg7QUFBQTtBQUFBO0FBQUE7QUFBQSxxQkFHQTtBQUFBO0FBQUEsWUFSS0E7QUFBQUEsWUFEUDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFVBVUE7QUFBQSxRQUNEO0FBQUEsUUFFRDtBQUFBLFVBQUMsT0FBTztBQUFBLFVBQVA7QUFBQSxZQUNDLEtBQUtGO0FBQUFBLFlBQ0wsS0FBSTtBQUFBLFlBQ0osV0FBVTtBQUFBLFlBQ1YsT0FBTztBQUFBLGNBQ0w2QixpQkFDRTtBQUFBLGNBQ0ZDLFdBQ0U7QUFBQSxjQUNGQyxRQUNFO0FBQUEsWUFDSjtBQUFBLFlBQ0EsU0FBUyxFQUFFYixTQUFTLEdBQUdDLEdBQUcsSUFBSUksT0FBTyxLQUFLO0FBQUEsWUFDMUMsU0FBUyxFQUFFTCxTQUFTLEdBQUdDLEdBQUcsR0FBR08sR0FBRyxDQUFDLEdBQUcsS0FBSyxDQUFDLEdBQUdILE9BQU8sRUFBRTtBQUFBLFlBQ3RELFlBQVk7QUFBQSxjQUNWTCxTQUFTLEVBQUVFLFVBQVUsS0FBS0MsTUFBTSxVQUFVO0FBQUEsY0FDMUNGLEdBQUcsRUFBRUMsVUFBVSxLQUFLQyxNQUFNLFVBQVU7QUFBQSxjQUNwQ0UsT0FBTyxFQUFFSCxVQUFVLEtBQUtDLE1BQU0sVUFBVTtBQUFBLGNBQ3hDSyxHQUFHLEVBQUVOLFVBQVUsR0FBR0ksUUFBUUMsVUFBVUosTUFBTSxZQUFZO0FBQUEsWUFDeEQ7QUFBQSxZQUNBLFlBQVksRUFBRVcsU0FBUyxHQUFHQyxTQUFTLElBQUlWLE9BQU8sS0FBSztBQUFBO0FBQUEsVUFwQnJEO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxRQW9CdUQ7QUFBQSxRQUd2RDtBQUFBLFVBQUM7QUFBQTtBQUFBLFlBQ0M7QUFBQSxZQUNBLFdBQVU7QUFBQTtBQUFBLFVBRlo7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFFBRStQO0FBQUEsUUFFL1A7QUFBQSxVQUFDLE9BQU87QUFBQSxVQUFQO0FBQUEsWUFDQztBQUFBLFlBQ0EsV0FBVTtBQUFBLFlBQ1YsU0FBUyxFQUFFTCxTQUFTLENBQUMsTUFBTSxNQUFNLElBQUksR0FBR2dCLFFBQVEsQ0FBQyxNQUFNLE1BQU0sSUFBSSxFQUFFO0FBQUEsWUFDbkUsWUFBWSxFQUFFZCxVQUFVLEtBQUtJLFFBQVFDLFVBQVVKLE1BQU0sWUFBWTtBQUFBO0FBQUEsVUFKbkU7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFFBSXFFO0FBQUEsUUFHckUsdUJBQUMsU0FBSSxXQUFVLG1GQUNacEIsaUJBQU8wQjtBQUFBQSxVQUFJLENBQUMsRUFBRXpCLE9BQU9DLEtBQUssTUFDekI7QUFBQSxZQUFDO0FBQUE7QUFBQSxjQUVDLFdBQVU7QUFBQSxjQUVWO0FBQUEsdUNBQUMsUUFBSyxNQUFNLElBQUksV0FBVSxnQkFBMUI7QUFBQTtBQUFBO0FBQUE7QUFBQSx1QkFBc0M7QUFBQSxnQkFDckNEO0FBQUFBO0FBQUFBO0FBQUFBLFlBSklBO0FBQUFBLFlBRFA7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxVQU1BO0FBQUEsUUFDRCxLQVRIO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFVQTtBQUFBLFdBbkhGO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFvSEE7QUFBQTtBQUFBLElBM0hGO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxFQTRIQTtBQUVKO0FBQUNpQyxLQWhJdUJsQjtBQUFlLElBQUFrQjtBQUFBLGFBQUFBLElBQUEiLCJuYW1lcyI6WyJtb3Rpb24iLCJDbG91ZCIsIkNvZGUyIiwiU2hpZWxkQ2hlY2siLCJXb3JrZmxvdyIsInBob3RvIiwiYmFkZ2VzIiwibGFiZWwiLCJJY29uIiwiY2xhc3NOYW1lIiwiZGVsYXkiLCJwYXJ0aWNsZXMiLCJBcnJheSIsImZyb20iLCJsZW5ndGgiLCJfIiwiaW5kZXgiLCJpZCIsImxlZnQiLCJ0b3AiLCJzaXplIiwidG9uZSIsIlByb2ZpbGVTaG93Y2FzZSIsIm9wYWNpdHkiLCJ4IiwiZHVyYXRpb24iLCJlYXNlIiwicGVyc3BlY3RpdmUiLCJzY2FsZSIsInJlcGVhdCIsIkluZmluaXR5IiwieSIsIm1hcCIsInBhcnRpY2xlIiwiV2Via2l0TWFza0ltYWdlIiwibWFza0ltYWdlIiwiZmlsdGVyIiwicm90YXRlWCIsInJvdGF0ZVkiLCJzY2FsZVgiLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJQcm9maWxlU2hvd2Nhc2UuanN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IG1vdGlvbiB9IGZyb20gXCJmcmFtZXItbW90aW9uXCI7XG5pbXBvcnQgeyBDbG91ZCwgQ29kZTIsIFNoaWVsZENoZWNrLCBXb3JrZmxvdyB9IGZyb20gXCJsdWNpZGUtcmVhY3RcIjtcblxuY29uc3QgcGhvdG8gPSBcIi9hc3NldHMvcHJvZmlsZS1vcmJpdC5wbmdcIjtcblxuY29uc3QgYmFkZ2VzID0gW1xuICB7IGxhYmVsOiBcIkZ1bGwtU3RhY2tcIiwgSWNvbjogQ29kZTIsIGNsYXNzTmFtZTogXCItbGVmdC0yIHRvcC1bMjQlXSBsZzotbGVmdC01XCIsIGRlbGF5OiAwIH0sXG4gIHsgbGFiZWw6IFwiUUEgQXV0b21hdGlvblwiLCBJY29uOiBTaGllbGRDaGVjaywgY2xhc3NOYW1lOiBcInJpZ2h0LTAgdG9wLVsyNCVdIGxnOi1yaWdodC00XCIsIGRlbGF5OiAwLjE4IH0sXG4gIHsgbGFiZWw6IFwiRGV2T3BzXCIsIEljb246IENsb3VkLCBjbGFzc05hbWU6IFwibGVmdC0xIGJvdHRvbS1bMjglXSBsZzotbGVmdC0yXCIsIGRlbGF5OiAwLjM2IH0sXG4gIHsgbGFiZWw6IFwiUHJvZHVjdCBPcHNcIiwgSWNvbjogV29ya2Zsb3csIGNsYXNzTmFtZTogXCJyaWdodC0xIGJvdHRvbS1bMjElXSBsZzotcmlnaHQtM1wiLCBkZWxheTogMC41NCB9XG5dO1xuXG5jb25zdCBwYXJ0aWNsZXMgPSBBcnJheS5mcm9tKHsgbGVuZ3RoOiAxOCB9LCAoXywgaW5kZXgpID0+ICh7XG4gIGlkOiBpbmRleCxcbiAgbGVmdDogYCR7KGluZGV4ICogMjkgKyA4KSAlIDk0fSVgLFxuICB0b3A6IGAkeyhpbmRleCAqIDQxICsgMTMpICUgODh9JWAsXG4gIGRlbGF5OiBpbmRleCAqIDAuMTYsXG4gIHNpemU6IGluZGV4ICUgNSA9PT0gMCA/IFwiaC0xLjUgdy0xLjVcIiA6IFwiaC0xIHctMVwiLFxuICB0b25lOiBpbmRleCAlIDUgPT09IDAgPyBcImJnLWFtYmVyLzgwIHNoYWRvdy1bMF8wXzE2cHhfcmdiYSgyNTAsMjA0LDIxLDAuNzUpXVwiIDogXCJiZy1jeWFuLTIwMC83NSBzaGFkb3ctWzBfMF8xNnB4X3JnYmEoMzQsMjExLDIzOCwwLjc1KV1cIlxufSkpO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBQcm9maWxlU2hvd2Nhc2UoKSB7XG4gIHJldHVybiAoXG4gICAgPG1vdGlvbi5kaXZcbiAgICAgIGNsYXNzTmFtZT1cInJlbGF0aXZlIHotMTAgbXgtYXV0byBmbGV4IHctZnVsbCBtYXgtdy1bMzZyZW1dIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBweC0yIHB5LTQgbGc6LW10LThcIlxuICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB4OiA0MiB9fVxuICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCB4OiAwIH19XG4gICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjgyLCBlYXNlOiBbMC4yMiwgMSwgMC4zNiwgMV0gfX1cbiAgICAgIHN0eWxlPXt7IHBlcnNwZWN0aXZlOiAxMDAwIH19XG4gICAgPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJyZWxhdGl2ZSBmbGV4IGgtWzI5cmVtXSB3LWZ1bGwgbWF4LXctWzIycmVtXSBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgc206aC1bMzVyZW1dIHNtOm1heC13LVszNHJlbV0gbGc6aC1bbWluKDM4LjVyZW0sY2FsYygxMDB2aC04cmVtKSldIGxnOm1heC13LVszNnJlbV1cIj5cbiAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICBhcmlhLWhpZGRlblxuICAgICAgICAgIGNsYXNzTmFtZT1cImFic29sdXRlIGgtWzIzcmVtXSB3LVsyM3JlbV0gcm91bmRlZC1mdWxsIGJnLWdyYWRpZW50LXRvLWJyIGZyb20tcHVycGxlQWNjZW50LzI4IHZpYS1za3lBY2NlbnQvMTggdG8tYW1iZXIvMTAgYmx1ci0zeGwgc206aC1bMzJyZW1dIHNtOnctWzMycmVtXVwiXG4gICAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiBbMC4zNCwgMC42MiwgMC4zNF0sIHNjYWxlOiBbMC45OCwgMS4wNSwgMC45OF0gfX1cbiAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiA2LjUsIHJlcGVhdDogSW5maW5pdHksIGVhc2U6IFwiZWFzZUluT3V0XCIgfX1cbiAgICAgICAgLz5cbiAgICAgICAgPGRpdiBhcmlhLWhpZGRlbiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBoLVsxOHJlbV0gdy1bMThyZW1dIHJvdW5kZWQtZnVsbCBiZy1bcmFkaWFsLWdyYWRpZW50KGNpcmNsZSxyZ2JhKDM0LDIxMSwyMzgsMC4xMikscmdiYSg4LDAsMTYsMC45MilfNTglLHRyYW5zcGFyZW50XzcyJSldIGJsdXItc20gc206aC1bMjlyZW1dIHNtOnctWzI5cmVtXVwiIC8+XG4gICAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgICAgYXJpYS1oaWRkZW5cbiAgICAgICAgICBjbGFzc05hbWU9XCJhYnNvbHV0ZSBoLVsxOHJlbV0gdy1bMThyZW1dIHJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWN5YW4tMzAwLzQ1IHNoYWRvdy1bMF8wXzM0cHhfcmdiYSgzNCwyMTEsMjM4LDAuMjIpXSBzbTpoLVsyN3JlbV0gc206dy1bMjdyZW1dXCJcbiAgICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IFswLjU4LCAxLCAwLjU4XSwgc2NhbGU6IFswLjk4LCAxLjAyLCAwLjk4XSB9fVxuICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDcsIHJlcGVhdDogSW5maW5pdHksIGVhc2U6IFwiZWFzZUluT3V0XCIgfX1cbiAgICAgICAgLz5cbiAgICAgICAgPGRpdlxuICAgICAgICAgIGFyaWEtaGlkZGVuXG4gICAgICAgICAgY2xhc3NOYW1lPVwiYWJzb2x1dGUgaC1bMjFyZW1dIHctWzIxcmVtXSByb3VuZGVkLWZ1bGwgYm9yZGVyIGJvcmRlci1wdXJwbGUtNDAwLzMwIHNtOmgtWzMxcmVtXSBzbTp3LVszMXJlbV1cIlxuICAgICAgICAvPlxuICAgICAgICA8ZGl2XG4gICAgICAgICAgYXJpYS1oaWRkZW5cbiAgICAgICAgICBjbGFzc05hbWU9XCJhYnNvbHV0ZSBoLVsyM3JlbV0gdy1bMjNyZW1dIHJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWRhc2hlZCBib3JkZXItYW1iZXIvMjUgc206aC1bMzRyZW1dIHNtOnctWzM0cmVtXVwiXG4gICAgICAgIC8+XG4gICAgICAgIDxkaXZcbiAgICAgICAgICBhcmlhLWhpZGRlblxuICAgICAgICAgIGNsYXNzTmFtZT1cImFic29sdXRlIGgtWzE2cmVtXSB3LVsxNnJlbV0gcm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItY3lhbi0zMDAvMjAgc206aC1bMjNyZW1dIHNtOnctWzIzcmVtXVwiXG4gICAgICAgIC8+XG4gICAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgICAgYXJpYS1oaWRkZW5cbiAgICAgICAgICBjbGFzc05hbWU9XCJhYnNvbHV0ZSBoLVsxNHJlbV0gdy1bMjhyZW1dIC1yb3RhdGUtWzEzZGVnXSByb3VuZGVkLVs1MCVdIGJvcmRlci10IGJvcmRlci1jeWFuLTIwMC8zNSBzbTpoLVsyMHJlbV0gc206dy1bMzlyZW1dXCJcbiAgICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IFswLjQ1LCAwLjg1LCAwLjQ1XSwgeTogWzAsIC01LCAwXSB9fVxuICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDcuMiwgcmVwZWF0OiBJbmZpbml0eSwgZWFzZTogXCJlYXNlSW5PdXRcIiB9fVxuICAgICAgICAvPlxuICAgICAgICA8bW90aW9uLmRpdlxuICAgICAgICAgIGFyaWEtaGlkZGVuXG4gICAgICAgICAgY2xhc3NOYW1lPVwiYWJzb2x1dGUgaC1bMTNyZW1dIHctWzI3cmVtXSByb3RhdGUtWzE3ZGVnXSByb3VuZGVkLVs1MCVdIGJvcmRlci1iIGJvcmRlci1wdXJwbGUtNDAwLzM1IHNtOmgtWzE5cmVtXSBzbTp3LVszOHJlbV1cIlxuICAgICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogWzAuMzYsIDAuNzIsIDAuMzZdLCB5OiBbMCwgNSwgMF0gfX1cbiAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiA4LjQsIHJlcGVhdDogSW5maW5pdHksIGVhc2U6IFwiZWFzZUluT3V0XCIsIGRlbGF5OiAwLjYgfX1cbiAgICAgICAgLz5cblxuICAgICAgICA8ZGl2IGFyaWEtaGlkZGVuIGNsYXNzTmFtZT1cImRvdC1tYXRyaXggYWJzb2x1dGUgcmlnaHQtNSB0b3AtMTAgaC0zNiB3LTM2IG9wYWNpdHktMjUgc206cmlnaHQtMTAgc206dG9wLTEyXCIgLz5cbiAgICAgICAgPGRpdiBhcmlhLWhpZGRlbiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBib3R0b20tOCBsZWZ0LTEvMiBoLTIwIHctNzIgLXRyYW5zbGF0ZS14LTEvMiByb3VuZGVkLWZ1bGwgYmctYmxhY2svNjAgYmx1ci0yeGwgc206dy1bMjhyZW1dXCIgLz5cbiAgICAgICAgPGRpdlxuICAgICAgICAgIGFyaWEtaGlkZGVuXG4gICAgICAgICAgY2xhc3NOYW1lPVwiYWJzb2x1dGUgYm90dG9tLTEwIGxlZnQtMS8yIHotWzIxXSBoLTIwIHctWzE3cmVtXSAtdHJhbnNsYXRlLXgtMS8yIHJvdW5kZWQtWzUwJV0gYm9yZGVyLXQgYm9yZGVyLWN5YW4tMjAwLzI1IGJnLVtyYWRpYWwtZ3JhZGllbnQoZWxsaXBzZV9hdF9jZW50ZXIscmdiYSgzNCwyMTEsMjM4LDAuMjIpLHJnYmEoMTI0LDU4LDIzNywwLjE0KV80MiUsdHJhbnNwYXJlbnRfNzIlKV0gc206aC0yNCBzbTp3LVsyNXJlbV1cIlxuICAgICAgICAvPlxuXG4gICAgICAgIHtwYXJ0aWNsZXMubWFwKChwYXJ0aWNsZSkgPT4gKFxuICAgICAgICAgIDxtb3Rpb24uc3BhblxuICAgICAgICAgICAgYXJpYS1oaWRkZW5cbiAgICAgICAgICAgIGtleT17cGFydGljbGUuaWR9XG4gICAgICAgICAgICBjbGFzc05hbWU9e2BhYnNvbHV0ZSByb3VuZGVkLWZ1bGwgJHtwYXJ0aWNsZS50b25lfSAke3BhcnRpY2xlLnNpemV9YH1cbiAgICAgICAgICAgIHN0eWxlPXt7IGxlZnQ6IHBhcnRpY2xlLmxlZnQsIHRvcDogcGFydGljbGUudG9wIH19XG4gICAgICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IFswLjEyLCAwLjgsIDAuMTJdLCB5OiBbMCwgLTE0LCAwXSB9fVxuICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogNC4zICsgcGFydGljbGUuaWQgKiAwLjA4LCByZXBlYXQ6IEluZmluaXR5LCBlYXNlOiBcImVhc2VJbk91dFwiLCBkZWxheTogcGFydGljbGUuZGVsYXkgfX1cbiAgICAgICAgICAvPlxuICAgICAgICApKX1cblxuICAgICAgICB7YmFkZ2VzLm1hcCgoeyBsYWJlbCwgSWNvbiwgY2xhc3NOYW1lLCBkZWxheSB9KSA9PiAoXG4gICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgIGtleT17bGFiZWx9XG4gICAgICAgICAgICBjbGFzc05hbWU9e2BhYnNvbHV0ZSB6LTMwIGhpZGRlbiBtZDpibG9jayAke2NsYXNzTmFtZX1gfVxuICAgICAgICAgICAgYW5pbWF0ZT17eyB5OiBbMCwgLTksIDBdIH19XG4gICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiA1LjIgKyBkZWxheSwgcmVwZWF0OiBJbmZpbml0eSwgZWFzZTogXCJlYXNlSW5PdXRcIiwgZGVsYXkgfX1cbiAgICAgICAgICA+XG4gICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgcm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItY3lhbi0zMDAvMzAgYmctWyMwODA4MERdIHB4LTMuNSBweS0yIHRleHQteHMgZm9udC1ibGFjayB0ZXh0LWN5YW4tNTAgc2hhZG93LWxnIHNoYWRvdy1ibGFjay80MFwiPlxuICAgICAgICAgICAgICA8SWNvbiBzaXplPXsxNH0gY2xhc3NOYW1lPVwidGV4dC1hbWJlclwiIC8+XG4gICAgICAgICAgICAgIHtsYWJlbH1cbiAgICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgICA8L21vdGlvbi5kaXY+XG4gICAgICAgICkpfVxuXG4gICAgICAgIDxtb3Rpb24uaW1nXG4gICAgICAgICAgc3JjPXtwaG90b31cbiAgICAgICAgICBhbHQ9XCJTYXl5YWIgQXNocmFmXCJcbiAgICAgICAgICBjbGFzc05hbWU9XCJyZWxhdGl2ZSB6LTIwIGgtWzI0cmVtXSB3LWF1dG8gbWF4LXctWzIycmVtXSBvYmplY3QtY29udGFpbiBzbTpoLVszNHJlbV0gc206bWF4LXctWzMycmVtXSBsZzpoLVttaW4oMzhyZW0sY2FsYygxMDB2aC04LjRyZW0pKV0gbGc6bWF4LXctWzMzcmVtXVwiXG4gICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgIFdlYmtpdE1hc2tJbWFnZTpcbiAgICAgICAgICAgICAgXCJyYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSA2MiUgNzklIGF0IDUwJSAzOSUsICMwMDAgMCUsICMwMDAgNzElLCByZ2JhKDAsMCwwLDAuODYpIDgyJSwgcmdiYSgwLDAsMCwwLjMyKSA5MyUsIHRyYW5zcGFyZW50IDEwMCUpXCIsXG4gICAgICAgICAgICBtYXNrSW1hZ2U6XG4gICAgICAgICAgICAgIFwicmFkaWFsLWdyYWRpZW50KGVsbGlwc2UgNjIlIDc5JSBhdCA1MCUgMzklLCAjMDAwIDAlLCAjMDAwIDcxJSwgcmdiYSgwLDAsMCwwLjg2KSA4MiUsIHJnYmEoMCwwLDAsMC4zMikgOTMlLCB0cmFuc3BhcmVudCAxMDAlKVwiLFxuICAgICAgICAgICAgZmlsdGVyOlxuICAgICAgICAgICAgICBcImRyb3Atc2hhZG93KDAgMCA0cHggcmdiYSgyNTUsMjU1LDI1NSwwLjgwKSkgZHJvcC1zaGFkb3coMCAwIDE4cHggcmdiYSgzNCwyMTEsMjM4LDAuNDgpKSBkcm9wLXNoYWRvdygwIDAgMzBweCByZ2JhKDE2OCw4NSwyNDcsMC4yNikpIGRyb3Atc2hhZG93KDAgMjhweCA0OHB4IHJnYmEoMCwwLDAsMC42MCkpXCJcbiAgICAgICAgICB9fVxuICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgeDogMzYsIHNjYWxlOiAwLjk4IH19XG4gICAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCB4OiAwLCB5OiBbMCwgLTEwLCAwXSwgc2NhbGU6IDEgfX1cbiAgICAgICAgICB0cmFuc2l0aW9uPXt7XG4gICAgICAgICAgICBvcGFjaXR5OiB7IGR1cmF0aW9uOiAwLjcsIGVhc2U6IFwiZWFzZU91dFwiIH0sXG4gICAgICAgICAgICB4OiB7IGR1cmF0aW9uOiAwLjcsIGVhc2U6IFwiZWFzZU91dFwiIH0sXG4gICAgICAgICAgICBzY2FsZTogeyBkdXJhdGlvbjogMC43LCBlYXNlOiBcImVhc2VPdXRcIiB9LFxuICAgICAgICAgICAgeTogeyBkdXJhdGlvbjogNiwgcmVwZWF0OiBJbmZpbml0eSwgZWFzZTogXCJlYXNlSW5PdXRcIiB9XG4gICAgICAgICAgfX1cbiAgICAgICAgICB3aGlsZUhvdmVyPXt7IHJvdGF0ZVg6IDMsIHJvdGF0ZVk6IC00LCBzY2FsZTogMS4wMiB9fVxuICAgICAgICAvPlxuXG4gICAgICAgIDxkaXZcbiAgICAgICAgICBhcmlhLWhpZGRlblxuICAgICAgICAgIGNsYXNzTmFtZT1cInBvaW50ZXItZXZlbnRzLW5vbmUgYWJzb2x1dGUgYm90dG9tLTMgbGVmdC0xLzIgei1bMjVdIGgtMjggdy1bMThyZW1dIC10cmFuc2xhdGUteC0xLzIgcm91bmRlZC1bNTAlXSBiZy1bcmFkaWFsLWdyYWRpZW50KGVsbGlwc2VfYXRfY2VudGVyLHJnYmEoNSwwLDEzLDAuOTYpXzAlLHJnYmEoNSwwLDEzLDAuNzApXzMyJSxyZ2JhKDUsMCwxMywwLjE4KV81OSUsdHJhbnNwYXJlbnRfNzQlKV0gc206aC0zMiBzbTp3LVsyNXJlbV1cIlxuICAgICAgICAvPlxuICAgICAgICA8bW90aW9uLmRpdlxuICAgICAgICAgIGFyaWEtaGlkZGVuXG4gICAgICAgICAgY2xhc3NOYW1lPVwicG9pbnRlci1ldmVudHMtbm9uZSBhYnNvbHV0ZSBib3R0b20tWzQuN3JlbV0gbGVmdC0xLzIgei1bMjZdIGgtcHggdy1bMTNyZW1dIC10cmFuc2xhdGUteC0xLzIgYmctZ3JhZGllbnQtdG8tciBmcm9tLXRyYW5zcGFyZW50IHZpYS1jeWFuLTIwMC80NSB0by10cmFuc3BhcmVudCBzbTpib3R0b20tWzUuNnJlbV0gc206dy1bMjByZW1dXCJcbiAgICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IFswLjQyLCAwLjg1LCAwLjQyXSwgc2NhbGVYOiBbMC45NCwgMS4wMiwgMC45NF0gfX1cbiAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiA1LjgsIHJlcGVhdDogSW5maW5pdHksIGVhc2U6IFwiZWFzZUluT3V0XCIgfX1cbiAgICAgICAgLz5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIC1ib3R0b20tMiB6LTMwIGdyaWQgdy1mdWxsIG1heC13LVsyMXJlbV0gZ3JpZC1jb2xzLTIgZ2FwLTIuNSBtZDpoaWRkZW5cIj5cbiAgICAgICAgICB7YmFkZ2VzLm1hcCgoeyBsYWJlbCwgSWNvbiB9KSA9PiAoXG4gICAgICAgICAgICA8c3BhblxuICAgICAgICAgICAgICBrZXk9e2xhYmVsfVxuICAgICAgICAgICAgICBjbGFzc05hbWU9XCJpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZ2FwLTIgcm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItY3lhbi0zMDAvMjUgYmctWyMwODA4MERdIHB4LTMgcHktMiB0ZXh0LVswLjY4cmVtXSBmb250LWJsYWNrIHRleHQtY3lhbi01MCBzaGFkb3ctbGdcIlxuICAgICAgICAgICAgPlxuICAgICAgICAgICAgICA8SWNvbiBzaXplPXsxM30gY2xhc3NOYW1lPVwidGV4dC1hbWJlclwiIC8+XG4gICAgICAgICAgICAgIHtsYWJlbH1cbiAgICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgICApKX1cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L21vdGlvbi5kaXY+XG4gICk7XG59XG4iXSwiZmlsZSI6IkM6L1VzZXJzL0hQL0Rlc2t0b3AvcG9ydGZvbGlvL3NyYy9jb21wb25lbnRzL1Byb2ZpbGVTaG93Y2FzZS5qc3gifQ==

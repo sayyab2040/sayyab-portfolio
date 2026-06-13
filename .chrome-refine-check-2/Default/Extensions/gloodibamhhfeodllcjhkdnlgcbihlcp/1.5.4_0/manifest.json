@@ -1,0 +1,44 @@
+{
+   "action": {
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "rxpath.min.js", "msgport.js", "nodemap.js", "content.js" ],
+      "match_about_blank": true,
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   },
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "ruleset_1",
+         "path": "rules.json"
+      } ]
+   },
+   "description": "Ranorex automation support.",
+   "host_permissions": [ "http://*/*", "https://*/*", "*://*/*", "*://example.com/*", "*://testbook.com/*" ],
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon.png",
+      "32": "icon32.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAirVIPK0E/waYEiXlNUYWUmFRONiEnHC2WCdEalnRWdfgJI/UbHmsvqt6EeePOuNrCPNXxdzniYrh5rcc6TVYCl0luAQz2vlGPeFGTskqfX60mccA2BUfnybX6SUHK4tBJYiTJBNpTKIMJ1r0x+wOf9rmeovszExrCqE046VYiKmjloIM3JUxRBfYNSOlXhW0IMDN/xBpIhS6TBGMjkiFx0os9dtFTGOxn9rbZru7smpyHZBFqWVpyak6Wyl2TcAzbo0GMJxS+PajZ0pZMoxYPhELSLEqXI7jgrqgETX+x7PEvl/WiyI6ex2MpdGPYw5vitgMvBv1sRMZpMzaqNFVpQIDAQAB",
+   "manifest_version": 3,
+   "name": "Ranorex Automation",
+   "permissions": [ "background", "nativeMessaging", "tabs", "storage", "alarms", "declarativeNetRequest", "declarativeNetRequestFeedback", "scripting", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.4",
+   "web_accessible_resources": [ {
+      "extension_ids": [ "gloodibamhhfeodllcjhkdnlgcbihlcp" ],
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "rxpath.min.js", "msgport.js", "nodemap.js", "content.js" ]
+   } ]
+}

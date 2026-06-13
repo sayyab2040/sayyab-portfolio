@@ -1,0 +1,449 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/Ecommerce.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=cebbdec0"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import { motion } from "/node_modules/.vite/deps/framer-motion.js?v=cebbdec0";
+import { BarChart3, CheckCircle2, FileText, Package, Search, ShoppingCart, Star } from "/node_modules/.vite/deps/lucide-react.js?v=cebbdec0";
+import { ecommerceCards } from "/src/data/portfolioData.js";
+import BarChart from "/src/components/BarChart.jsx?t=1780852555014";
+import ProgressBar from "/src/components/ProgressBar.jsx?t=1780852578342";
+import SectionTitle from "/src/components/SectionTitle.jsx?t=1780852389327";
+export default function Ecommerce() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "ecommerce", className: "section-offset section-panel light-band", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-0 animated-grid opacity-[0.30]" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+      lineNumber: 30,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-0 wave-lines opacity-[0.10]" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+      lineNumber: 31,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "section-blob left-[-9rem] top-28 h-80 w-80 bg-purpleAccent/20" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+      lineNumber: 32,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "section-blob right-[-9rem] bottom-20 h-80 w-80 bg-skyAccent/10" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+      lineNumber: 33,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "section-shell", children: [
+      /* @__PURE__ */ jsxDEV(
+        SectionTitle,
+        {
+          eyebrow: "Marketplace Strategy",
+          title: "E-commerce and product operations dashboard.",
+          subtitle: "A secondary but professional view of product research, sourcing, listing optimization, competitor analysis, marketplace research, and Amazon VA workflows."
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+          lineNumber: 36,
+          columnNumber: 9
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { className: "grid items-start gap-8 lg:grid-cols-[0.94fr_1.06fr]", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "grid gap-4 sm:grid-cols-2", children: ecommerceCards.map(
+          ({ title, description, Icon }, index) => /* @__PURE__ */ jsxDEV(
+            motion.article,
+            {
+              className: "gradient-border glow-card glass-card rounded-[1.45rem] p-5 card-3d",
+              initial: { opacity: 0, y: 22 },
+              whileInView: { opacity: 1, y: 0 },
+              viewport: { once: true, amount: 0.25 },
+              transition: { duration: 0.42, delay: index * 0.05 },
+              children: [
+                /* @__PURE__ */ jsxDEV("span", { className: "flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-amber via-purpleAccent to-skyAccent text-[#030014] shadow-[0_18px_55px_rgba(250,204,21,0.22)]", children: /* @__PURE__ */ jsxDEV(Icon, { size: 19 }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 54,
+                  columnNumber: 19
+                }, this) }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 53,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV("h3", { className: "mt-4 text-base font-black text-white", children: title }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 56,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV("p", { className: "mt-2 text-sm leading-6 text-slate-400", children: description }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 57,
+                  columnNumber: 17
+                }, this)
+              ]
+            },
+            title,
+            true,
+            {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+              lineNumber: 45,
+              columnNumber: 13
+            },
+            this
+          )
+        ) }, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+          lineNumber: 43,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV(ProductOpsDashboard, {}, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+          lineNumber: 62,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+        lineNumber: 42,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+      lineNumber: 35,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+    lineNumber: 29,
+    columnNumber: 5
+  }, this);
+}
+_c = Ecommerce;
+function ProductOpsDashboard() {
+  return /* @__PURE__ */ jsxDEV(
+    motion.div,
+    {
+      className: "gradient-border glow-card dark-glass-strong rounded-[2.1rem] p-4 sm:p-5",
+      initial: { opacity: 0, x: 26 },
+      whileInView: { opacity: 1, x: 0 },
+      viewport: { once: true, amount: 0.25 },
+      transition: { duration: 0.55 },
+      children: /* @__PURE__ */ jsxDEV("div", { className: "dark-grid rounded-[1.6rem] border border-cyan-300/20 bg-[#050505] p-5", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "mb-5 flex flex-wrap items-center justify-between gap-3", children: [
+          /* @__PURE__ */ jsxDEV("div", { children: [
+            /* @__PURE__ */ jsxDEV("p", { className: "text-xs font-black uppercase tracking-[0.2em] text-cyan-200", children: "Business Operations Console" }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+              lineNumber: 81,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV("h3", { className: "mt-1 text-2xl font-black text-white", children: "Product Research Center" }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+              lineNumber: 82,
+              columnNumber: 13
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+            lineNumber: 80,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: "inline-flex items-center gap-2 rounded-full border border-emerald/25 bg-emerald/10 px-3 py-1.5 text-xs font-black text-emerald", children: [
+            /* @__PURE__ */ jsxDEV(CheckCircle2, { size: 14 }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+              lineNumber: 85,
+              columnNumber: 13
+            }, this),
+            "Active"
+          ] }, void 0, true, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+            lineNumber: 84,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+          lineNumber: 79,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "grid gap-4 xl:grid-cols-[0.95fr_1.05fr]", children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "space-y-4", children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.45rem] border border-cyan-300/20 bg-[#0A0A12] p-5", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "flex items-center justify-between", children: [
+                /* @__PURE__ */ jsxDEV("span", { className: "flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan-300/10 text-cyan-100", children: /* @__PURE__ */ jsxDEV(Search, { size: 18 }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 95,
+                  columnNumber: 19
+                }, this) }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 94,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { className: "rounded-full bg-emerald/10 px-2 py-1 text-[0.64rem] font-black text-emerald", children: "Opportunity" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 97,
+                  columnNumber: 17
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                lineNumber: 93,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { className: "mt-6 text-4xl font-black text-white", children: "91/100" }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                lineNumber: 99,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-sm font-bold text-slate-400", children: "Product research score" }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                lineNumber: 100,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "mt-4", children: /* @__PURE__ */ jsxDEV(ProgressBar, { value: 91, showValue: false, color: "yellow" }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                lineNumber: 102,
+                columnNumber: 17
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                lineNumber: 101,
+                columnNumber: 15
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+              lineNumber: 92,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.45rem] border border-cyan-300/20 bg-[#0A0A12] p-5", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "mb-4 flex items-center justify-between", children: [
+                /* @__PURE__ */ jsxDEV("p", { className: "text-xs font-black uppercase tracking-[0.16em] text-cyan-100", children: "Supplier Comparison" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 108,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV(Package, { size: 17, className: "text-teal-200" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 109,
+                  columnNumber: 17
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                lineNumber: 107,
+                columnNumber: 15
+              }, this),
+              ["Factory A - $2.45/u", "Factory B - $2.10/u", "Factory C - $2.25/u"].map(
+                (row, index) => /* @__PURE__ */ jsxDEV("div", { className: "mb-2 flex items-center justify-between rounded-xl bg-[#11111A] px-3 py-2 text-xs font-bold text-slate-300", children: [
+                  /* @__PURE__ */ jsxDEV("span", { children: row }, void 0, false, {
+                    fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                    lineNumber: 113,
+                    columnNumber: 19
+                  }, this),
+                  /* @__PURE__ */ jsxDEV(Star, { size: 13, className: index === 1 ? "text-amber" : "text-slate-600" }, void 0, false, {
+                    fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                    lineNumber: 114,
+                    columnNumber: 19
+                  }, this)
+                ] }, row, true, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 112,
+                  columnNumber: 15
+                }, this)
+              )
+            ] }, void 0, true, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+              lineNumber: 106,
+              columnNumber: 13
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+            lineNumber: 91,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "space-y-4", children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.45rem] border border-cyan-300/20 bg-[#0A0A12] p-5", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "mb-4 flex items-center justify-between", children: [
+                /* @__PURE__ */ jsxDEV("p", { className: "text-xs font-black uppercase tracking-[0.16em] text-cyan-100", children: "Competitor Analysis" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 123,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV(BarChart3, { size: 18, className: "text-cyan-200" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 124,
+                  columnNumber: 17
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                lineNumber: 122,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV(
+                BarChart,
+                {
+                  height: 132,
+                  data: [
+                    { label: "A", value: 42 },
+                    { label: "B", value: 68 },
+                    { label: "C", value: 54 },
+                    { label: "D", value: 86 }
+                  ]
+                },
+                void 0,
+                false,
+                {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 126,
+                  columnNumber: 15
+                },
+                this
+              )
+            ] }, void 0, true, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+              lineNumber: 121,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.45rem] border border-cyan-300/20 bg-[#0A0A12] p-5", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "flex items-center justify-between", children: [
+                /* @__PURE__ */ jsxDEV("p", { className: "text-xs font-black uppercase tracking-[0.16em] text-cyan-100", children: "Listing Optimization" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 139,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV(FileText, { size: 17, className: "text-teal-200" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 140,
+                  columnNumber: 17
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                lineNumber: 138,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "mt-4 flex items-center justify-between text-sm", children: [
+                /* @__PURE__ */ jsxDEV("span", { className: "font-bold text-slate-300", children: "Keyword coverage" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 143,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { className: "font-black text-white", children: "86%" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 144,
+                  columnNumber: 17
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                lineNumber: 142,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "mt-3", children: /* @__PURE__ */ jsxDEV(ProgressBar, { value: 86, showValue: false, color: "cyan" }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                lineNumber: 147,
+                columnNumber: 17
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                lineNumber: 146,
+                columnNumber: 15
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+              lineNumber: 137,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.45rem] border border-cyan-300/20 bg-[#0A0A12] p-5", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "mb-4 flex items-center gap-3", children: [
+                /* @__PURE__ */ jsxDEV("span", { className: "flex h-10 w-10 items-center justify-center rounded-2xl bg-tealAccent/10 text-teal-200", children: /* @__PURE__ */ jsxDEV(ShoppingCart, { size: 17 }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 154,
+                  columnNumber: 19
+                }, this) }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 153,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { children: [
+                  /* @__PURE__ */ jsxDEV("p", { className: "text-sm font-black text-white", children: "Amazon VA Workflow" }, void 0, false, {
+                    fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                    lineNumber: 157,
+                    columnNumber: 19
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("p", { className: "text-xs font-semibold text-slate-500", children: "Research, source, optimize, monitor" }, void 0, false, {
+                    fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                    lineNumber: 158,
+                    columnNumber: 19
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 156,
+                  columnNumber: 17
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                lineNumber: 152,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "flex flex-wrap gap-2", children: ["product sourcing", "keyword cluster", "listing audit", "price tracking", "margin review"].map(
+                (chip) => /* @__PURE__ */ jsxDEV("span", { className: "dark-chip text-[0.65rem]", children: chip }, chip, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                  lineNumber: 163,
+                  columnNumber: 17
+                }, this)
+              ) }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+                lineNumber: 161,
+                columnNumber: 15
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+              lineNumber: 151,
+              columnNumber: 13
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+            lineNumber: 120,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+          lineNumber: 90,
+          columnNumber: 9
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+        lineNumber: 78,
+        columnNumber: 7
+      }, this)
+    },
+    void 0,
+    false,
+    {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx",
+      lineNumber: 71,
+      columnNumber: 5
+    },
+    this
+  );
+}
+_c2 = ProductOpsDashboard;
+var _c, _c2;
+$RefreshReg$(_c, "Ecommerce");
+$RefreshReg$(_c2, "ProductOpsDashboard");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/HP/Desktop/portfolio/src/components/Ecommerce.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUFtQixJQUFBRCxJQUFBTztBQUFBLGFBQUFQLElBQUE7QUFBQSxhQUFBTyxLQUFBIiwibmFtZXMiOlsibW90aW9uIiwiQmFyQ2hhcnQzIiwiQ2hlY2tDaXJjbGUyIiwiRmlsZVRleHQiLCJQYWNrYWdlIiwiU2VhcmNoIiwiU2hvcHBpbmdDYXJ0IiwiU3RhciIsImVjb21tZXJjZUNhcmRzIiwiQmFyQ2hhcnQiLCJQcm9ncmVzc0JhciIsIlNlY3Rpb25UaXRsZSIsIkVjb21tZXJjZSIsIm1hcCIsInRpdGxlIiwiZGVzY3JpcHRpb24iLCJJY29uIiwiaW5kZXgiLCJvcGFjaXR5IiwieSIsIm9uY2UiLCJhbW91bnQiLCJkdXJhdGlvbiIsImRlbGF5IiwiX2MiLCJQcm9kdWN0T3BzRGFzaGJvYXJkIiwieCIsInJvdyIsImxhYmVsIiwidmFsdWUiLCJjaGlwIiwiX2MyIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIkVjb21tZXJjZS5qc3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgbW90aW9uIH0gZnJvbSBcImZyYW1lci1tb3Rpb25cIjtcbmltcG9ydCB7IEJhckNoYXJ0MywgQ2hlY2tDaXJjbGUyLCBGaWxlVGV4dCwgUGFja2FnZSwgU2VhcmNoLCBTaG9wcGluZ0NhcnQsIFN0YXIgfSBmcm9tIFwibHVjaWRlLXJlYWN0XCI7XG5pbXBvcnQgeyBlY29tbWVyY2VDYXJkcyB9IGZyb20gXCIuLi9kYXRhL3BvcnRmb2xpb0RhdGEuanNcIjtcbmltcG9ydCBCYXJDaGFydCBmcm9tIFwiLi9CYXJDaGFydC5qc3hcIjtcbmltcG9ydCBQcm9ncmVzc0JhciBmcm9tIFwiLi9Qcm9ncmVzc0Jhci5qc3hcIjtcbmltcG9ydCBTZWN0aW9uVGl0bGUgZnJvbSBcIi4vU2VjdGlvblRpdGxlLmpzeFwiO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBFY29tbWVyY2UoKSB7XG4gIHJldHVybiAoXG4gICAgPHNlY3Rpb24gaWQ9XCJlY29tbWVyY2VcIiBjbGFzc05hbWU9XCJzZWN0aW9uLW9mZnNldCBzZWN0aW9uLXBhbmVsIGxpZ2h0LWJhbmRcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgaW5zZXQtMCBhbmltYXRlZC1ncmlkIG9wYWNpdHktWzAuMzBdXCIgLz5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgaW5zZXQtMCB3YXZlLWxpbmVzIG9wYWNpdHktWzAuMTBdXCIgLz5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwic2VjdGlvbi1ibG9iIGxlZnQtWy05cmVtXSB0b3AtMjggaC04MCB3LTgwIGJnLXB1cnBsZUFjY2VudC8yMFwiIC8+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInNlY3Rpb24tYmxvYiByaWdodC1bLTlyZW1dIGJvdHRvbS0yMCBoLTgwIHctODAgYmctc2t5QWNjZW50LzEwXCIgLz5cblxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJzZWN0aW9uLXNoZWxsXCI+XG4gICAgICAgIDxTZWN0aW9uVGl0bGVcbiAgICAgICAgICBleWVicm93PVwiTWFya2V0cGxhY2UgU3RyYXRlZ3lcIlxuICAgICAgICAgIHRpdGxlPVwiRS1jb21tZXJjZSBhbmQgcHJvZHVjdCBvcGVyYXRpb25zIGRhc2hib2FyZC5cIlxuICAgICAgICAgIHN1YnRpdGxlPVwiQSBzZWNvbmRhcnkgYnV0IHByb2Zlc3Npb25hbCB2aWV3IG9mIHByb2R1Y3QgcmVzZWFyY2gsIHNvdXJjaW5nLCBsaXN0aW5nIG9wdGltaXphdGlvbiwgY29tcGV0aXRvciBhbmFseXNpcywgbWFya2V0cGxhY2UgcmVzZWFyY2gsIGFuZCBBbWF6b24gVkEgd29ya2Zsb3dzLlwiXG4gICAgICAgIC8+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGl0ZW1zLXN0YXJ0IGdhcC04IGxnOmdyaWQtY29scy1bMC45NGZyXzEuMDZmcl1cIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ2FwLTQgc206Z3JpZC1jb2xzLTJcIj5cbiAgICAgICAgICAgIHtlY29tbWVyY2VDYXJkcy5tYXAoKHsgdGl0bGUsIGRlc2NyaXB0aW9uLCBJY29uIH0sIGluZGV4KSA9PiAoXG4gICAgICAgICAgICAgIDxtb3Rpb24uYXJ0aWNsZVxuICAgICAgICAgICAgICAgIGtleT17dGl0bGV9XG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiZ3JhZGllbnQtYm9yZGVyIGdsb3ctY2FyZCBnbGFzcy1jYXJkIHJvdW5kZWQtWzEuNDVyZW1dIHAtNSBjYXJkLTNkXCJcbiAgICAgICAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHk6IDIyIH19XG4gICAgICAgICAgICAgICAgd2hpbGVJblZpZXc9e3sgb3BhY2l0eTogMSwgeTogMCB9fVxuICAgICAgICAgICAgICAgIHZpZXdwb3J0PXt7IG9uY2U6IHRydWUsIGFtb3VudDogMC4yNSB9fVxuICAgICAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuNDIsIGRlbGF5OiBpbmRleCAqIDAuMDUgfX1cbiAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImZsZXggaC0xMSB3LTExIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciByb3VuZGVkLTJ4bCBiZy1ncmFkaWVudC10by1iciBmcm9tLWFtYmVyIHZpYS1wdXJwbGVBY2NlbnQgdG8tc2t5QWNjZW50IHRleHQtWyMwMzAwMTRdIHNoYWRvdy1bMF8xOHB4XzU1cHhfcmdiYSgyNTAsMjA0LDIxLDAuMjIpXVwiPlxuICAgICAgICAgICAgICAgICAgPEljb24gc2l6ZT17MTl9IC8+XG4gICAgICAgICAgICAgICAgPC9zcGFuPlxuICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJtdC00IHRleHQtYmFzZSBmb250LWJsYWNrIHRleHQtd2hpdGVcIj57dGl0bGV9PC9oMz5cbiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC0yIHRleHQtc20gbGVhZGluZy02IHRleHQtc2xhdGUtNDAwXCI+e2Rlc2NyaXB0aW9ufTwvcD5cbiAgICAgICAgICAgICAgPC9tb3Rpb24uYXJ0aWNsZT5cbiAgICAgICAgICAgICkpfVxuICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgPFByb2R1Y3RPcHNEYXNoYm9hcmQgLz5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG5cbmZ1bmN0aW9uIFByb2R1Y3RPcHNEYXNoYm9hcmQoKSB7XG4gIHJldHVybiAoXG4gICAgPG1vdGlvbi5kaXZcbiAgICAgIGNsYXNzTmFtZT1cImdyYWRpZW50LWJvcmRlciBnbG93LWNhcmQgZGFyay1nbGFzcy1zdHJvbmcgcm91bmRlZC1bMi4xcmVtXSBwLTQgc206cC01XCJcbiAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgeDogMjYgfX1cbiAgICAgIHdoaWxlSW5WaWV3PXt7IG9wYWNpdHk6IDEsIHg6IDAgfX1cbiAgICAgIHZpZXdwb3J0PXt7IG9uY2U6IHRydWUsIGFtb3VudDogMC4yNSB9fVxuICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMC41NSB9fVxuICAgID5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZGFyay1ncmlkIHJvdW5kZWQtWzEuNnJlbV0gYm9yZGVyIGJvcmRlci1jeWFuLTMwMC8yMCBiZy1bIzA1MDUwNV0gcC01XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWItNSBmbGV4IGZsZXgtd3JhcCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGdhcC0zXCI+XG4gICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteHMgZm9udC1ibGFjayB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMmVtXSB0ZXh0LWN5YW4tMjAwXCI+QnVzaW5lc3MgT3BlcmF0aW9ucyBDb25zb2xlPC9wPlxuICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cIm10LTEgdGV4dC0yeGwgZm9udC1ibGFjayB0ZXh0LXdoaXRlXCI+UHJvZHVjdCBSZXNlYXJjaCBDZW50ZXI8L2gzPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImlubGluZS1mbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiByb3VuZGVkLWZ1bGwgYm9yZGVyIGJvcmRlci1lbWVyYWxkLzI1IGJnLWVtZXJhbGQvMTAgcHgtMyBweS0xLjUgdGV4dC14cyBmb250LWJsYWNrIHRleHQtZW1lcmFsZFwiPlxuICAgICAgICAgICAgPENoZWNrQ2lyY2xlMiBzaXplPXsxNH0gLz5cbiAgICAgICAgICAgIEFjdGl2ZVxuICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdhcC00IHhsOmdyaWQtY29scy1bMC45NWZyXzEuMDVmcl1cIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInNwYWNlLXktNFwiPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb3VuZGVkLVsxLjQ1cmVtXSBib3JkZXIgYm9yZGVyLWN5YW4tMzAwLzIwIGJnLVsjMEEwQTEyXSBwLTVcIj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW5cIj5cbiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJmbGV4IGgtMTEgdy0xMSBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcm91bmRlZC0yeGwgYmctY3lhbi0zMDAvMTAgdGV4dC1jeWFuLTEwMFwiPlxuICAgICAgICAgICAgICAgICAgPFNlYXJjaCBzaXplPXsxOH0gLz5cbiAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwicm91bmRlZC1mdWxsIGJnLWVtZXJhbGQvMTAgcHgtMiBweS0xIHRleHQtWzAuNjRyZW1dIGZvbnQtYmxhY2sgdGV4dC1lbWVyYWxkXCI+T3Bwb3J0dW5pdHk8L3NwYW4+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC02IHRleHQtNHhsIGZvbnQtYmxhY2sgdGV4dC13aGl0ZVwiPjkxLzEwMDwvcD5cbiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMSB0ZXh0LXNtIGZvbnQtYm9sZCB0ZXh0LXNsYXRlLTQwMFwiPlByb2R1Y3QgcmVzZWFyY2ggc2NvcmU8L3A+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtNFwiPlxuICAgICAgICAgICAgICAgIDxQcm9ncmVzc0JhciB2YWx1ZT17OTF9IHNob3dWYWx1ZT17ZmFsc2V9IGNvbG9yPVwieWVsbG93XCIgLz5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb3VuZGVkLVsxLjQ1cmVtXSBib3JkZXIgYm9yZGVyLWN5YW4tMzAwLzIwIGJnLVsjMEEwQTEyXSBwLTVcIj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYi00IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlblwiPlxuICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteHMgZm9udC1ibGFjayB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMTZlbV0gdGV4dC1jeWFuLTEwMFwiPlN1cHBsaWVyIENvbXBhcmlzb248L3A+XG4gICAgICAgICAgICAgICAgPFBhY2thZ2Ugc2l6ZT17MTd9IGNsYXNzTmFtZT1cInRleHQtdGVhbC0yMDBcIiAvPlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAge1tcIkZhY3RvcnkgQSAtICQyLjQ1L3VcIiwgXCJGYWN0b3J5IEIgLSAkMi4xMC91XCIsIFwiRmFjdG9yeSBDIC0gJDIuMjUvdVwiXS5tYXAoKHJvdywgaW5kZXgpID0+IChcbiAgICAgICAgICAgICAgICA8ZGl2IGtleT17cm93fSBjbGFzc05hbWU9XCJtYi0yIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiByb3VuZGVkLXhsIGJnLVsjMTExMTFBXSBweC0zIHB5LTIgdGV4dC14cyBmb250LWJvbGQgdGV4dC1zbGF0ZS0zMDBcIj5cbiAgICAgICAgICAgICAgICAgIDxzcGFuPntyb3d9PC9zcGFuPlxuICAgICAgICAgICAgICAgICAgPFN0YXIgc2l6ZT17MTN9IGNsYXNzTmFtZT17aW5kZXggPT09IDEgPyBcInRleHQtYW1iZXJcIiA6IFwidGV4dC1zbGF0ZS02MDBcIn0gLz5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgKSl9XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwic3BhY2UteS00XCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJvdW5kZWQtWzEuNDVyZW1dIGJvcmRlciBib3JkZXItY3lhbi0zMDAvMjAgYmctWyMwQTBBMTJdIHAtNVwiPlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTQgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuXCI+XG4gICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC14cyBmb250LWJsYWNrIHVwcGVyY2FzZSB0cmFja2luZy1bMC4xNmVtXSB0ZXh0LWN5YW4tMTAwXCI+Q29tcGV0aXRvciBBbmFseXNpczwvcD5cbiAgICAgICAgICAgICAgICA8QmFyQ2hhcnQzIHNpemU9ezE4fSBjbGFzc05hbWU9XCJ0ZXh0LWN5YW4tMjAwXCIgLz5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDxCYXJDaGFydFxuICAgICAgICAgICAgICAgIGhlaWdodD17MTMyfVxuICAgICAgICAgICAgICAgIGRhdGE9e1tcbiAgICAgICAgICAgICAgICAgIHsgbGFiZWw6IFwiQVwiLCB2YWx1ZTogNDIgfSxcbiAgICAgICAgICAgICAgICAgIHsgbGFiZWw6IFwiQlwiLCB2YWx1ZTogNjggfSxcbiAgICAgICAgICAgICAgICAgIHsgbGFiZWw6IFwiQ1wiLCB2YWx1ZTogNTQgfSxcbiAgICAgICAgICAgICAgICAgIHsgbGFiZWw6IFwiRFwiLCB2YWx1ZTogODYgfVxuICAgICAgICAgICAgICAgIF19XG4gICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb3VuZGVkLVsxLjQ1cmVtXSBib3JkZXIgYm9yZGVyLWN5YW4tMzAwLzIwIGJnLVsjMEEwQTEyXSBwLTVcIj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW5cIj5cbiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhzIGZvbnQtYmxhY2sgdXBwZXJjYXNlIHRyYWNraW5nLVswLjE2ZW1dIHRleHQtY3lhbi0xMDBcIj5MaXN0aW5nIE9wdGltaXphdGlvbjwvcD5cbiAgICAgICAgICAgICAgICA8RmlsZVRleHQgc2l6ZT17MTd9IGNsYXNzTmFtZT1cInRleHQtdGVhbC0yMDBcIiAvPlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC00IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiB0ZXh0LXNtXCI+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiZm9udC1ib2xkIHRleHQtc2xhdGUtMzAwXCI+S2V5d29yZCBjb3ZlcmFnZTwvc3Bhbj5cbiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJmb250LWJsYWNrIHRleHQtd2hpdGVcIj44NiU8L3NwYW4+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTNcIj5cbiAgICAgICAgICAgICAgICA8UHJvZ3Jlc3NCYXIgdmFsdWU9ezg2fSBzaG93VmFsdWU9e2ZhbHNlfSBjb2xvcj1cImN5YW5cIiAvPlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJvdW5kZWQtWzEuNDVyZW1dIGJvcmRlciBib3JkZXItY3lhbi0zMDAvMjAgYmctWyMwQTBBMTJdIHAtNVwiPlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTQgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTNcIj5cbiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJmbGV4IGgtMTAgdy0xMCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcm91bmRlZC0yeGwgYmctdGVhbEFjY2VudC8xMCB0ZXh0LXRlYWwtMjAwXCI+XG4gICAgICAgICAgICAgICAgICA8U2hvcHBpbmdDYXJ0IHNpemU9ezE3fSAvPlxuICAgICAgICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1zbSBmb250LWJsYWNrIHRleHQtd2hpdGVcIj5BbWF6b24gVkEgV29ya2Zsb3c8L3A+XG4gICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhzIGZvbnQtc2VtaWJvbGQgdGV4dC1zbGF0ZS01MDBcIj5SZXNlYXJjaCwgc291cmNlLCBvcHRpbWl6ZSwgbW9uaXRvcjwvcD5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBmbGV4LXdyYXAgZ2FwLTJcIj5cbiAgICAgICAgICAgICAgICB7W1wicHJvZHVjdCBzb3VyY2luZ1wiLCBcImtleXdvcmQgY2x1c3RlclwiLCBcImxpc3RpbmcgYXVkaXRcIiwgXCJwcmljZSB0cmFja2luZ1wiLCBcIm1hcmdpbiByZXZpZXdcIl0ubWFwKChjaGlwKSA9PiAoXG4gICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJkYXJrLWNoaXAgdGV4dC1bMC42NXJlbV1cIiBrZXk9e2NoaXB9PntjaGlwfTwvc3Bhbj5cbiAgICAgICAgICAgICAgICApKX1cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L21vdGlvbi5kaXY+XG4gICk7XG59XG4iXSwiZmlsZSI6IkM6L1VzZXJzL0hQL0Rlc2t0b3AvcG9ydGZvbGlvL3NyYy9jb21wb25lbnRzL0Vjb21tZXJjZS5qc3gifQ==

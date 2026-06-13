@@ -1,0 +1,614 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/TravEraCaseStudy.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=cebbdec0"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import { motion } from "/node_modules/.vite/deps/framer-motion.js?v=cebbdec0";
+import { ArrowRight, Bell, Bot, CalendarCheck, CloudSun, Compass, DollarSign, LifeBuoy, MessageCircle, ShieldCheck, Users } from "/node_modules/.vite/deps/lucide-react.js?v=cebbdec0";
+import { traveraFlows, traveraModules } from "/src/data/portfolioData.js";
+import MiniLineChart from "/src/components/MiniLineChart.jsx?t=1780852529444";
+import SectionTitle from "/src/components/SectionTitle.jsx?t=1780852389327";
+export default function TravEraCaseStudy() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "travera", className: "section-offset section-panel dark-band", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "absolute inset-0 dark-grid opacity-[0.38]" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+      lineNumber: 29,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "section-blob left-[-8rem] top-24 h-96 w-96 bg-violetAccent/25" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+      lineNumber: 30,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "section-blob right-[-9rem] top-1/3 h-[28rem] w-[28rem] bg-skyAccent/20" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+      lineNumber: 31,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "section-blob bottom-[-8rem] left-[35%] h-80 w-80 bg-tealAccent/20" }, void 0, false, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+      lineNumber: 32,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "section-shell", children: [
+      /* @__PURE__ */ jsxDEV(
+        SectionTitle,
+        {
+          eyebrow: "Case Study 01",
+          title: "TravEra, an AI travel planning and booking platform.",
+          subtitle: "A connected product concept combining personalized trip planning, vendor bids, itinerary management, bookings, weather, messaging, reviews, emergency support, and notifications.",
+          light: true
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 35,
+          columnNumber: 9
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { className: "grid gap-6 md:grid-cols-2", children: [
+        /* @__PURE__ */ jsxDEV(
+          CaseBlock,
+          {
+            title: "Problem",
+            Icon: Compass,
+            tone: "from-rose-500/20 to-purple-500/10",
+            text: "Travel platforms are fragmented and users often need multiple services for planning, vendor communication, bookings, weather checks, reviews, and itinerary management."
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 43,
+            columnNumber: 11
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV(
+          CaseBlock,
+          {
+            title: "Solution",
+            Icon: Bot,
+            tone: "from-teal-500/20 to-cyan-500/10",
+            text: "TravEra combines planning, vendor services, booking workflows, AI recommendations, weather, messaging, reviews, emergency support, and notifications into one connected platform."
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 49,
+            columnNumber: 11
+          },
+          this
+        )
+      ] }, void 0, true, {
+        fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+        lineNumber: 42,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "mt-10 grid items-start gap-8 lg:grid-cols-[0.95fr_1.05fr]", children: [
+        /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            className: "gradient-border glow-card dark-glass rounded-[2.15rem] p-5 sm:p-6",
+            initial: { opacity: 0, x: -28 },
+            whileInView: { opacity: 1, x: 0 },
+            viewport: { once: true, amount: 0.25 },
+            transition: { duration: 0.55 },
+            children: /* @__PURE__ */ jsxDEV("div", { className: "rounded-[1.6rem] border border-cyan-300/20 bg-[#050505] p-5 dark-grid", children: [
+              /* @__PURE__ */ jsxDEV("p", { className: "text-xs font-black uppercase tracking-[0.2em] text-cyan-200", children: "Platform Modules" }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                lineNumber: 66,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "mt-5 grid gap-3 sm:grid-cols-2", children: traveraModules.map(
+                (module, index) => /* @__PURE__ */ jsxDEV(
+                  motion.div,
+                  {
+                    className: "rounded-2xl border border-cyan-300/20 bg-[#0A0A12] p-3 text-sm font-bold text-slate-200",
+                    initial: { opacity: 0, y: 14 },
+                    whileInView: { opacity: 1, y: 0 },
+                    viewport: { once: true },
+                    transition: { duration: 0.35, delay: index * 0.025 },
+                    whileHover: { y: -4, borderColor: "rgba(34,211,238,0.36)" },
+                    children: [
+                      /* @__PURE__ */ jsxDEV("span", { className: "status-dot mr-2 align-middle" }, void 0, false, {
+                        fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                        lineNumber: 78,
+                        columnNumber: 21
+                      }, this),
+                      module
+                    ]
+                  },
+                  module,
+                  true,
+                  {
+                    fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                    lineNumber: 69,
+                    columnNumber: 17
+                  },
+                  this
+                )
+              ) }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                lineNumber: 67,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "mt-7 space-y-5", children: traveraFlows.slice(0, 2).map(
+                (flow, index) => /* @__PURE__ */ jsxDEV(FlowCard, { flow, index }, flow.title, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                  lineNumber: 86,
+                  columnNumber: 17
+                }, this)
+              ) }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                lineNumber: 84,
+                columnNumber: 15
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 65,
+              columnNumber: 13
+            }, this)
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 58,
+            columnNumber: 11
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV(TravEraProductConsole, {}, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 92,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+        lineNumber: 57,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+      lineNumber: 34,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+    lineNumber: 28,
+    columnNumber: 5
+  }, this);
+}
+_c = TravEraCaseStudy;
+function CaseBlock({ title, text, Icon, tone }) {
+  return /* @__PURE__ */ jsxDEV(
+    motion.article,
+    {
+      className: `gradient-border glow-card rounded-[1.7rem] border border-purple-400/25 bg-[#08080D] p-6 shadow-premium sm:p-8`,
+      initial: { opacity: 0, y: 24 },
+      whileInView: { opacity: 1, y: 0 },
+      viewport: { once: true, amount: 0.25 },
+      transition: { duration: 0.5 },
+      whileHover: { y: -6 },
+      children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan-300/20 bg-[#11111A] p-3 text-cyan-100 shadow-premium", children: /* @__PURE__ */ jsxDEV(Icon, { size: 24 }, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 110,
+          columnNumber: 9
+        }, this) }, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 109,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ jsxDEV("h3", { className: "mt-5 font-display text-2xl font-black text-white", children: title }, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 112,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "mt-3 text-sm font-medium leading-7 text-slate-300 sm:text-base", children: text }, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 113,
+          columnNumber: 7
+        }, this)
+      ]
+    },
+    void 0,
+    true,
+    {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+      lineNumber: 101,
+      columnNumber: 5
+    },
+    this
+  );
+}
+_c2 = CaseBlock;
+function FlowCard({ flow, index }) {
+  return /* @__PURE__ */ jsxDEV(
+    motion.article,
+    {
+      className: "rounded-[1.35rem] border border-cyan-300/20 bg-[#0A0A12] p-4",
+      initial: { opacity: 0, y: 18 },
+      whileInView: { opacity: 1, y: 0 },
+      viewport: { once: true },
+      transition: { duration: 0.42, delay: index * 0.08 },
+      children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "flex items-center gap-2", children: [
+          /* @__PURE__ */ jsxDEV("span", { className: "status-dot" }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 128,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("h3", { className: "text-sm font-black uppercase tracking-[0.15em] text-white", children: flow.title }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 129,
+            columnNumber: 9
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 127,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "mt-4 flex flex-wrap items-center gap-2", children: flow.steps.map(
+          (step, stepIndex) => /* @__PURE__ */ jsxDEV("div", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxDEV("span", { className: "rounded-xl border border-purple-300/20 bg-[#11111A] px-3 py-2 text-xs font-bold text-slate-200", children: step }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 134,
+              columnNumber: 13
+            }, this),
+            stepIndex < flow.steps.length - 1 ? /* @__PURE__ */ jsxDEV(motion.span, { animate: { x: [0, 4, 0] }, transition: { duration: 1.5, repeat: Infinity, ease: "easeInOut" }, children: /* @__PURE__ */ jsxDEV(ArrowRight, { size: 14, className: "text-cyan-300" }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 137,
+              columnNumber: 17
+            }, this) }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 136,
+              columnNumber: 11
+            }, this) : null
+          ] }, `${flow.title}-${step}`, true, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 133,
+            columnNumber: 9
+          }, this)
+        ) }, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 131,
+          columnNumber: 7
+        }, this)
+      ]
+    },
+    void 0,
+    true,
+    {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+      lineNumber: 120,
+      columnNumber: 5
+    },
+    this
+  );
+}
+_c3 = FlowCard;
+function TravEraProductConsole() {
+  const activity = [
+    "AI route generated for Hunza valley",
+    "Vendor bid accepted by traveler",
+    "Emergency support contact verified"
+  ];
+  return /* @__PURE__ */ jsxDEV(
+    motion.div,
+    {
+      className: "gradient-border glow-card dark-glass-strong rounded-[2.15rem] p-4 sm:p-5",
+      initial: { opacity: 0, x: 28 },
+      whileInView: { opacity: 1, x: 0 },
+      viewport: { once: true, amount: 0.25 },
+      transition: { duration: 0.55 },
+      children: /* @__PURE__ */ jsxDEV("div", { className: "dark-grid rounded-[1.6rem] border border-cyan-300/20 bg-[#050505] p-5", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "mb-6 flex flex-wrap items-center justify-between gap-4", children: [
+          /* @__PURE__ */ jsxDEV("div", { children: [
+            /* @__PURE__ */ jsxDEV("p", { className: "text-xs font-black uppercase tracking-[0.2em] text-cyan-200", children: "Live Product Dashboard" }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 165,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV("h3", { className: "mt-1 text-2xl font-black text-white", children: "TravEra Core Console" }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 166,
+              columnNumber: 13
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 164,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: "flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-300/20 bg-[#0A0A12] text-cyan-100", children: /* @__PURE__ */ jsxDEV(Bell, { size: 18 }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 169,
+            columnNumber: 13
+          }, this) }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 168,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 163,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "grid gap-4 sm:grid-cols-[1.05fr_0.95fr]", children: [
+          /* @__PURE__ */ jsxDEV(
+            motion.div,
+            {
+              className: "rounded-[1.55rem] bg-gradient-to-br from-violetAccent via-royal to-skyAccent p-5 text-white shadow-premium",
+              animate: { y: [0, -7, 0] },
+              transition: { duration: 5.4, repeat: Infinity, ease: "easeInOut" },
+              children: [
+                /* @__PURE__ */ jsxDEV("div", { className: "flex items-center justify-between", children: [
+                  /* @__PURE__ */ jsxDEV(Bot, { size: 24 }, void 0, false, {
+                    fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                    lineNumber: 180,
+                    columnNumber: 15
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("span", { className: "rounded-full bg-amber px-3 py-1 text-[0.68rem] font-black text-[#050505]", children: "AI Planner" }, void 0, false, {
+                    fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                    lineNumber: 181,
+                    columnNumber: 15
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                  lineNumber: 179,
+                  columnNumber: 13
+                }, this),
+                /* @__PURE__ */ jsxDEV("h4", { className: "mt-12 text-3xl font-black leading-none", children: "Smart Trip Plan" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                  lineNumber: 183,
+                  columnNumber: 13
+                }, this),
+                /* @__PURE__ */ jsxDEV("p", { className: "mt-2 text-sm font-bold text-cyan-50/80", children: "Personalized recommendations, vendors, events, and route logic." }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                  lineNumber: 184,
+                  columnNumber: 13
+                }, this)
+              ]
+            },
+            void 0,
+            true,
+            {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 174,
+              columnNumber: 11
+            },
+            this
+          ),
+          /* @__PURE__ */ jsxDEV("div", { className: "grid gap-4", children: [
+            /* @__PURE__ */ jsxDEV(Widget, { Icon: DollarSign, label: "Vendor Bid", value: "$420 offer" }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 188,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV(Widget, { Icon: CalendarCheck, label: "Booking Status", value: "Confirmed" }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 189,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV(Widget, { Icon: CloudSun, label: "Weather", value: "Gilgit 24C" }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 190,
+              columnNumber: 13
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 187,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 173,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "mt-4 grid gap-4 sm:grid-cols-3", children: [
+          /* @__PURE__ */ jsxDEV(Widget, { Icon: LifeBuoy, label: "Emergency", value: "24/7 support", compact: true }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 195,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV(Widget, { Icon: MessageCircle, label: "Messaging", value: "Review thread", compact: true }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 196,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV(Widget, { Icon: Users, label: "Vendors", value: "4 active bids", compact: true }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 197,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 194,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "mt-4 rounded-[1.45rem] border border-cyan-300/20 bg-[#0A0A12] p-4", children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "mb-3 flex items-center justify-between", children: [
+            /* @__PURE__ */ jsxDEV("p", { className: "text-xs font-black uppercase tracking-[0.16em] text-cyan-100", children: "Activity Stream" }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 202,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV(ShieldCheck, { size: 16, className: "text-emerald" }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 203,
+              columnNumber: 13
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 201,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "space-y-2", children: activity.map(
+            (item) => /* @__PURE__ */ jsxDEV("div", { className: "flex items-center justify-between gap-3 rounded-xl bg-[#11111A] px-3 py-2", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "flex min-w-0 items-center gap-2", children: [
+                /* @__PURE__ */ jsxDEV("span", { className: "status-dot shrink-0" }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                  lineNumber: 209,
+                  columnNumber: 19
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { className: "truncate text-xs font-bold text-slate-300", children: item }, void 0, false, {
+                  fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                  lineNumber: 210,
+                  columnNumber: 19
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                lineNumber: 208,
+                columnNumber: 17
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { className: "shrink-0 text-[0.62rem] font-black text-slate-500", children: "Live" }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                lineNumber: 212,
+                columnNumber: 17
+              }, this)
+            ] }, item, true, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 207,
+              columnNumber: 13
+            }, this)
+          ) }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 205,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "mt-4 rounded-2xl border border-purple-300/20 bg-[#050505] p-3", children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "mb-2 flex items-center justify-between", children: [
+              /* @__PURE__ */ jsxDEV("span", { className: "text-[0.62rem] font-black uppercase tracking-[0.14em] text-amber", children: "Traveler Activity" }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                lineNumber: 218,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { className: "text-[0.62rem] font-black text-cyan-200", children: "+38%" }, void 0, false, {
+                fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+                lineNumber: 219,
+                columnNumber: 15
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 217,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV(MiniLineChart, { data: [26, 44, 39, 58, 74, 88], color: "purple", height: 64 }, void 0, false, {
+              fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+              lineNumber: 221,
+              columnNumber: 13
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 216,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 200,
+          columnNumber: 9
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+        lineNumber: 162,
+        columnNumber: 7
+      }, this)
+    },
+    void 0,
+    false,
+    {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+      lineNumber: 155,
+      columnNumber: 5
+    },
+    this
+  );
+}
+_c4 = TravEraProductConsole;
+function Widget({ Icon, label, value, compact = false }) {
+  return /* @__PURE__ */ jsxDEV(
+    motion.article,
+    {
+      className: `rounded-[1.35rem] border border-cyan-300/20 bg-[#0A0A12] ${compact ? "p-4" : "p-5"} shadow-premium`,
+      whileHover: { y: -4 },
+      children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "flex items-center justify-between gap-3", children: [
+          /* @__PURE__ */ jsxDEV("span", { className: "flex h-10 w-10 items-center justify-center rounded-2xl bg-cyan-300/10 text-cyan-100", children: /* @__PURE__ */ jsxDEV(Icon, { size: 17 }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 237,
+            columnNumber: 11
+          }, this) }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 236,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: "status-dot" }, void 0, false, {
+            fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+            lineNumber: 239,
+            columnNumber: 9
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 235,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "mt-4 text-xs font-black uppercase tracking-[0.14em] text-slate-400", children: label }, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 241,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-sm font-black text-white", children: value }, void 0, false, {
+          fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+          lineNumber: 242,
+          columnNumber: 7
+        }, this)
+      ]
+    },
+    void 0,
+    true,
+    {
+      fileName: "C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx",
+      lineNumber: 231,
+      columnNumber: 5
+    },
+    this
+  );
+}
+_c5 = Widget;
+var _c, _c2, _c3, _c4, _c5;
+$RefreshReg$(_c, "TravEraCaseStudy");
+$RefreshReg$(_c2, "CaseBlock");
+$RefreshReg$(_c3, "FlowCard");
+$RefreshReg$(_c4, "TravEraProductConsole");
+$RefreshReg$(_c5, "Widget");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/HP/Desktop/portfolio/src/components/TravEraCaseStudy.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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Q0MsTUFoRlFIO0FBa0ZULFNBQVNJLE9BQU8sRUFBRWhCLE1BQU1pQixPQUFPQyxPQUFPQyxVQUFVLE1BQU0sR0FBRztBQUN2RCxTQUNFO0FBQUEsSUFBQyxPQUFPO0FBQUEsSUFBUDtBQUFBLE1BQ0MsV0FBVyw0REFBNERBLFVBQVUsUUFBUSxLQUFLO0FBQUEsTUFDOUYsWUFBWSxFQUFFNUIsR0FBRyxHQUFHO0FBQUEsTUFFcEI7QUFBQSwrQkFBQyxTQUFJLFdBQVUsMkNBQ2I7QUFBQSxpQ0FBQyxVQUFLLFdBQVUsdUZBQ2QsaUNBQUMsUUFBSyxNQUFNLE1BQVo7QUFBQTtBQUFBO0FBQUE7QUFBQSxpQkFBZSxLQURqQjtBQUFBO0FBQUE7QUFBQTtBQUFBLGlCQUVBO0FBQUEsVUFDQSx1QkFBQyxVQUFLLFdBQVUsZ0JBQWhCO0FBQUE7QUFBQTtBQUFBO0FBQUEsaUJBQTRCO0FBQUEsYUFKOUI7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQUtBO0FBQUEsUUFDQSx1QkFBQyxPQUFFLFdBQVUsc0VBQXNFMEIsbUJBQW5GO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFBeUY7QUFBQSxRQUN6Rix1QkFBQyxPQUFFLFdBQVUsc0NBQXNDQyxtQkFBbkQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQUF5RDtBQUFBO0FBQUE7QUFBQSxJQVgzRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsRUFZQTtBQUVKO0FBQUNFLE1BaEJRSjtBQUFNLElBQUFuQixJQUFBSyxLQUFBUyxLQUFBSSxLQUFBSztBQUFBLGFBQUF2QixJQUFBO0FBQUEsYUFBQUssS0FBQTtBQUFBLGFBQUFTLEtBQUE7QUFBQSxhQUFBSSxLQUFBO0FBQUEsYUFBQUssS0FBQSIsIm5hbWVzIjpbIm1vdGlvbiIsIkFycm93UmlnaHQiLCJCZWxsIiwiQm90IiwiQ2FsZW5kYXJDaGVjayIsIkNsb3VkU3VuIiwiQ29tcGFzcyIsIkRvbGxhclNpZ24iLCJMaWZlQnVveSIsIk1lc3NhZ2VDaXJjbGUiLCJTaGllbGRDaGVjayIsIlVzZXJzIiwidHJhdmVyYUZsb3dzIiwidHJhdmVyYU1vZHVsZXMiLCJNaW5pTGluZUNoYXJ0IiwiU2VjdGlvblRpdGxlIiwiVHJhdkVyYUNhc2VTdHVkeSIsIm9wYWNpdHkiLCJ4Iiwib25jZSIsImFtb3VudCIsImR1cmF0aW9uIiwibWFwIiwibW9kdWxlIiwiaW5kZXgiLCJ5IiwiZGVsYXkiLCJib3JkZXJDb2xvciIsInNsaWNlIiwiZmxvdyIsInRpdGxlIiwiX2MiLCJDYXNlQmxvY2siLCJ0ZXh0IiwiSWNvbiIsInRvbmUiLCJfYzIiLCJGbG93Q2FyZCIsInN0ZXBzIiwic3RlcCIsInN0ZXBJbmRleCIsImxlbmd0aCIsInJlcGVhdCIsIkluZmluaXR5IiwiZWFzZSIsIl9jMyIsIlRyYXZFcmFQcm9kdWN0Q29uc29sZSIsImFjdGl2aXR5IiwiaXRlbSIsIl9jNCIsIldpZGdldCIsImxhYmVsIiwidmFsdWUiLCJjb21wYWN0IiwiX2M1Il0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIlRyYXZFcmFDYXNlU3R1ZHkuanN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IG1vdGlvbiB9IGZyb20gXCJmcmFtZXItbW90aW9uXCI7XG5pbXBvcnQgeyBBcnJvd1JpZ2h0LCBCZWxsLCBCb3QsIENhbGVuZGFyQ2hlY2ssIENsb3VkU3VuLCBDb21wYXNzLCBEb2xsYXJTaWduLCBMaWZlQnVveSwgTWVzc2FnZUNpcmNsZSwgU2hpZWxkQ2hlY2ssIFVzZXJzIH0gZnJvbSBcImx1Y2lkZS1yZWFjdFwiO1xuaW1wb3J0IHsgdHJhdmVyYUZsb3dzLCB0cmF2ZXJhTW9kdWxlcyB9IGZyb20gXCIuLi9kYXRhL3BvcnRmb2xpb0RhdGEuanNcIjtcbmltcG9ydCBNaW5pTGluZUNoYXJ0IGZyb20gXCIuL01pbmlMaW5lQ2hhcnQuanN4XCI7XG5pbXBvcnQgU2VjdGlvblRpdGxlIGZyb20gXCIuL1NlY3Rpb25UaXRsZS5qc3hcIjtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gVHJhdkVyYUNhc2VTdHVkeSgpIHtcbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBpZD1cInRyYXZlcmFcIiBjbGFzc05hbWU9XCJzZWN0aW9uLW9mZnNldCBzZWN0aW9uLXBhbmVsIGRhcmstYmFuZFwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBpbnNldC0wIGRhcmstZ3JpZCBvcGFjaXR5LVswLjM4XVwiIC8+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInNlY3Rpb24tYmxvYiBsZWZ0LVstOHJlbV0gdG9wLTI0IGgtOTYgdy05NiBiZy12aW9sZXRBY2NlbnQvMjVcIiAvPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJzZWN0aW9uLWJsb2IgcmlnaHQtWy05cmVtXSB0b3AtMS8zIGgtWzI4cmVtXSB3LVsyOHJlbV0gYmctc2t5QWNjZW50LzIwXCIgLz5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwic2VjdGlvbi1ibG9iIGJvdHRvbS1bLThyZW1dIGxlZnQtWzM1JV0gaC04MCB3LTgwIGJnLXRlYWxBY2NlbnQvMjBcIiAvPlxuXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInNlY3Rpb24tc2hlbGxcIj5cbiAgICAgICAgPFNlY3Rpb25UaXRsZVxuICAgICAgICAgIGV5ZWJyb3c9XCJDYXNlIFN0dWR5IDAxXCJcbiAgICAgICAgICB0aXRsZT1cIlRyYXZFcmEsIGFuIEFJIHRyYXZlbCBwbGFubmluZyBhbmQgYm9va2luZyBwbGF0Zm9ybS5cIlxuICAgICAgICAgIHN1YnRpdGxlPVwiQSBjb25uZWN0ZWQgcHJvZHVjdCBjb25jZXB0IGNvbWJpbmluZyBwZXJzb25hbGl6ZWQgdHJpcCBwbGFubmluZywgdmVuZG9yIGJpZHMsIGl0aW5lcmFyeSBtYW5hZ2VtZW50LCBib29raW5ncywgd2VhdGhlciwgbWVzc2FnaW5nLCByZXZpZXdzLCBlbWVyZ2VuY3kgc3VwcG9ydCwgYW5kIG5vdGlmaWNhdGlvbnMuXCJcbiAgICAgICAgICBsaWdodFxuICAgICAgICAvPlxuXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBnYXAtNiBtZDpncmlkLWNvbHMtMlwiPlxuICAgICAgICAgIDxDYXNlQmxvY2tcbiAgICAgICAgICAgIHRpdGxlPVwiUHJvYmxlbVwiXG4gICAgICAgICAgICBJY29uPXtDb21wYXNzfVxuICAgICAgICAgICAgdG9uZT1cImZyb20tcm9zZS01MDAvMjAgdG8tcHVycGxlLTUwMC8xMFwiXG4gICAgICAgICAgICB0ZXh0PVwiVHJhdmVsIHBsYXRmb3JtcyBhcmUgZnJhZ21lbnRlZCBhbmQgdXNlcnMgb2Z0ZW4gbmVlZCBtdWx0aXBsZSBzZXJ2aWNlcyBmb3IgcGxhbm5pbmcsIHZlbmRvciBjb21tdW5pY2F0aW9uLCBib29raW5ncywgd2VhdGhlciBjaGVja3MsIHJldmlld3MsIGFuZCBpdGluZXJhcnkgbWFuYWdlbWVudC5cIlxuICAgICAgICAgIC8+XG4gICAgICAgICAgPENhc2VCbG9ja1xuICAgICAgICAgICAgdGl0bGU9XCJTb2x1dGlvblwiXG4gICAgICAgICAgICBJY29uPXtCb3R9XG4gICAgICAgICAgICB0b25lPVwiZnJvbS10ZWFsLTUwMC8yMCB0by1jeWFuLTUwMC8xMFwiXG4gICAgICAgICAgICB0ZXh0PVwiVHJhdkVyYSBjb21iaW5lcyBwbGFubmluZywgdmVuZG9yIHNlcnZpY2VzLCBib29raW5nIHdvcmtmbG93cywgQUkgcmVjb21tZW5kYXRpb25zLCB3ZWF0aGVyLCBtZXNzYWdpbmcsIHJldmlld3MsIGVtZXJnZW5jeSBzdXBwb3J0LCBhbmQgbm90aWZpY2F0aW9ucyBpbnRvIG9uZSBjb25uZWN0ZWQgcGxhdGZvcm0uXCJcbiAgICAgICAgICAvPlxuICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTEwIGdyaWQgaXRlbXMtc3RhcnQgZ2FwLTggbGc6Z3JpZC1jb2xzLVswLjk1ZnJfMS4wNWZyXVwiPlxuICAgICAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgICAgICBjbGFzc05hbWU9XCJncmFkaWVudC1ib3JkZXIgZ2xvdy1jYXJkIGRhcmstZ2xhc3Mgcm91bmRlZC1bMi4xNXJlbV0gcC01IHNtOnAtNlwiXG4gICAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHg6IC0yOCB9fVxuICAgICAgICAgICAgd2hpbGVJblZpZXc9e3sgb3BhY2l0eTogMSwgeDogMCB9fVxuICAgICAgICAgICAgdmlld3BvcnQ9e3sgb25jZTogdHJ1ZSwgYW1vdW50OiAwLjI1IH19XG4gICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjU1IH19XG4gICAgICAgICAgPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb3VuZGVkLVsxLjZyZW1dIGJvcmRlciBib3JkZXItY3lhbi0zMDAvMjAgYmctWyMwNTA1MDVdIHAtNSBkYXJrLWdyaWRcIj5cbiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC14cyBmb250LWJsYWNrIHVwcGVyY2FzZSB0cmFja2luZy1bMC4yZW1dIHRleHQtY3lhbi0yMDBcIj5QbGF0Zm9ybSBNb2R1bGVzPC9wPlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTUgZ3JpZCBnYXAtMyBzbTpncmlkLWNvbHMtMlwiPlxuICAgICAgICAgICAgICAgIHt0cmF2ZXJhTW9kdWxlcy5tYXAoKG1vZHVsZSwgaW5kZXgpID0+IChcbiAgICAgICAgICAgICAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgICAgICAgICAgICAgIGtleT17bW9kdWxlfVxuICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJyb3VuZGVkLTJ4bCBib3JkZXIgYm9yZGVyLWN5YW4tMzAwLzIwIGJnLVsjMEEwQTEyXSBwLTMgdGV4dC1zbSBmb250LWJvbGQgdGV4dC1zbGF0ZS0yMDBcIlxuICAgICAgICAgICAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHk6IDE0IH19XG4gICAgICAgICAgICAgICAgICAgIHdoaWxlSW5WaWV3PXt7IG9wYWNpdHk6IDEsIHk6IDAgfX1cbiAgICAgICAgICAgICAgICAgICAgdmlld3BvcnQ9e3sgb25jZTogdHJ1ZSB9fVxuICAgICAgICAgICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjM1LCBkZWxheTogaW5kZXggKiAwLjAyNSB9fVxuICAgICAgICAgICAgICAgICAgICB3aGlsZUhvdmVyPXt7IHk6IC00LCBib3JkZXJDb2xvcjogXCJyZ2JhKDM0LDIxMSwyMzgsMC4zNilcIiB9fVxuICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJzdGF0dXMtZG90IG1yLTIgYWxpZ24tbWlkZGxlXCIgLz5cbiAgICAgICAgICAgICAgICAgICAge21vZHVsZX1cbiAgICAgICAgICAgICAgICAgIDwvbW90aW9uLmRpdj5cbiAgICAgICAgICAgICAgICApKX1cbiAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC03IHNwYWNlLXktNVwiPlxuICAgICAgICAgICAgICAgIHt0cmF2ZXJhRmxvd3Muc2xpY2UoMCwgMikubWFwKChmbG93LCBpbmRleCkgPT4gKFxuICAgICAgICAgICAgICAgICAgPEZsb3dDYXJkIGZsb3c9e2Zsb3d9IGtleT17Zmxvdy50aXRsZX0gaW5kZXg9e2luZGV4fSAvPlxuICAgICAgICAgICAgICAgICkpfVxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvbW90aW9uLmRpdj5cblxuICAgICAgICAgIDxUcmF2RXJhUHJvZHVjdENvbnNvbGUgLz5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG5cbmZ1bmN0aW9uIENhc2VCbG9jayh7IHRpdGxlLCB0ZXh0LCBJY29uLCB0b25lIH0pIHtcbiAgcmV0dXJuIChcbiAgICA8bW90aW9uLmFydGljbGVcbiAgICAgIGNsYXNzTmFtZT17YGdyYWRpZW50LWJvcmRlciBnbG93LWNhcmQgcm91bmRlZC1bMS43cmVtXSBib3JkZXIgYm9yZGVyLXB1cnBsZS00MDAvMjUgYmctWyMwODA4MERdIHAtNiBzaGFkb3ctcHJlbWl1bSBzbTpwLThgfVxuICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAyNCB9fVxuICAgICAgd2hpbGVJblZpZXc9e3sgb3BhY2l0eTogMSwgeTogMCB9fVxuICAgICAgdmlld3BvcnQ9e3sgb25jZTogdHJ1ZSwgYW1vdW50OiAwLjI1IH19XG4gICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjUgfX1cbiAgICAgIHdoaWxlSG92ZXI9e3sgeTogLTYgfX1cbiAgICA+XG4gICAgICA8c3BhbiBjbGFzc05hbWU9XCJmbGV4IGgtMTIgdy0xMiBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcm91bmRlZC0yeGwgYm9yZGVyIGJvcmRlci1jeWFuLTMwMC8yMCBiZy1bIzExMTExQV0gcC0zIHRleHQtY3lhbi0xMDAgc2hhZG93LXByZW1pdW1cIj5cbiAgICAgICAgPEljb24gc2l6ZT17MjR9IC8+XG4gICAgICA8L3NwYW4+XG4gICAgICA8aDMgY2xhc3NOYW1lPVwibXQtNSBmb250LWRpc3BsYXkgdGV4dC0yeGwgZm9udC1ibGFjayB0ZXh0LXdoaXRlXCI+e3RpdGxlfTwvaDM+XG4gICAgICA8cCBjbGFzc05hbWU9XCJtdC0zIHRleHQtc20gZm9udC1tZWRpdW0gbGVhZGluZy03IHRleHQtc2xhdGUtMzAwIHNtOnRleHQtYmFzZVwiPnt0ZXh0fTwvcD5cbiAgICA8L21vdGlvbi5hcnRpY2xlPlxuICApO1xufVxuXG5mdW5jdGlvbiBGbG93Q2FyZCh7IGZsb3csIGluZGV4IH0pIHtcbiAgcmV0dXJuIChcbiAgICA8bW90aW9uLmFydGljbGVcbiAgICAgIGNsYXNzTmFtZT1cInJvdW5kZWQtWzEuMzVyZW1dIGJvcmRlciBib3JkZXItY3lhbi0zMDAvMjAgYmctWyMwQTBBMTJdIHAtNFwiXG4gICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHk6IDE4IH19XG4gICAgICB3aGlsZUluVmlldz17eyBvcGFjaXR5OiAxLCB5OiAwIH19XG4gICAgICB2aWV3cG9ydD17eyBvbmNlOiB0cnVlIH19XG4gICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjQyLCBkZWxheTogaW5kZXggKiAwLjA4IH19XG4gICAgPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMlwiPlxuICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJzdGF0dXMtZG90XCIgLz5cbiAgICAgICAgPGgzIGNsYXNzTmFtZT1cInRleHQtc20gZm9udC1ibGFjayB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMTVlbV0gdGV4dC13aGl0ZVwiPntmbG93LnRpdGxlfTwvaDM+XG4gICAgICA8L2Rpdj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtNCBmbGV4IGZsZXgtd3JhcCBpdGVtcy1jZW50ZXIgZ2FwLTJcIj5cbiAgICAgICAge2Zsb3cuc3RlcHMubWFwKChzdGVwLCBzdGVwSW5kZXgpID0+IChcbiAgICAgICAgICA8ZGl2IGtleT17YCR7Zmxvdy50aXRsZX0tJHtzdGVwfWB9IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGdhcC0yXCI+XG4gICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJyb3VuZGVkLXhsIGJvcmRlciBib3JkZXItcHVycGxlLTMwMC8yMCBiZy1bIzExMTExQV0gcHgtMyBweS0yIHRleHQteHMgZm9udC1ib2xkIHRleHQtc2xhdGUtMjAwXCI+e3N0ZXB9PC9zcGFuPlxuICAgICAgICAgICAge3N0ZXBJbmRleCA8IGZsb3cuc3RlcHMubGVuZ3RoIC0gMSA/IChcbiAgICAgICAgICAgICAgPG1vdGlvbi5zcGFuIGFuaW1hdGU9e3sgeDogWzAsIDQsIDBdIH19IHRyYW5zaXRpb249e3sgZHVyYXRpb246IDEuNSwgcmVwZWF0OiBJbmZpbml0eSwgZWFzZTogXCJlYXNlSW5PdXRcIiB9fT5cbiAgICAgICAgICAgICAgICA8QXJyb3dSaWdodCBzaXplPXsxNH0gY2xhc3NOYW1lPVwidGV4dC1jeWFuLTMwMFwiIC8+XG4gICAgICAgICAgICAgIDwvbW90aW9uLnNwYW4+XG4gICAgICAgICAgICApIDogbnVsbH1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgKSl9XG4gICAgICA8L2Rpdj5cbiAgICA8L21vdGlvbi5hcnRpY2xlPlxuICApO1xufVxuXG5mdW5jdGlvbiBUcmF2RXJhUHJvZHVjdENvbnNvbGUoKSB7XG4gIGNvbnN0IGFjdGl2aXR5ID0gW1xuICAgIFwiQUkgcm91dGUgZ2VuZXJhdGVkIGZvciBIdW56YSB2YWxsZXlcIixcbiAgICBcIlZlbmRvciBiaWQgYWNjZXB0ZWQgYnkgdHJhdmVsZXJcIixcbiAgICBcIkVtZXJnZW5jeSBzdXBwb3J0IGNvbnRhY3QgdmVyaWZpZWRcIlxuICBdO1xuXG4gIHJldHVybiAoXG4gICAgPG1vdGlvbi5kaXZcbiAgICAgIGNsYXNzTmFtZT1cImdyYWRpZW50LWJvcmRlciBnbG93LWNhcmQgZGFyay1nbGFzcy1zdHJvbmcgcm91bmRlZC1bMi4xNXJlbV0gcC00IHNtOnAtNVwiXG4gICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHg6IDI4IH19XG4gICAgICB3aGlsZUluVmlldz17eyBvcGFjaXR5OiAxLCB4OiAwIH19XG4gICAgICB2aWV3cG9ydD17eyBvbmNlOiB0cnVlLCBhbW91bnQ6IDAuMjUgfX1cbiAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuNTUgfX1cbiAgICA+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImRhcmstZ3JpZCByb3VuZGVkLVsxLjZyZW1dIGJvcmRlciBib3JkZXItY3lhbi0zMDAvMjAgYmctWyMwNTA1MDVdIHAtNVwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTYgZmxleCBmbGV4LXdyYXAgaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBnYXAtNFwiPlxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhzIGZvbnQtYmxhY2sgdXBwZXJjYXNlIHRyYWNraW5nLVswLjJlbV0gdGV4dC1jeWFuLTIwMFwiPkxpdmUgUHJvZHVjdCBEYXNoYm9hcmQ8L3A+XG4gICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwibXQtMSB0ZXh0LTJ4bCBmb250LWJsYWNrIHRleHQtd2hpdGVcIj5UcmF2RXJhIENvcmUgQ29uc29sZTwvaDM+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiZmxleCBoLTExIHctMTEgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQtMnhsIGJvcmRlciBib3JkZXItY3lhbi0zMDAvMjAgYmctWyMwQTBBMTJdIHRleHQtY3lhbi0xMDBcIj5cbiAgICAgICAgICAgIDxCZWxsIHNpemU9ezE4fSAvPlxuICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdhcC00IHNtOmdyaWQtY29scy1bMS4wNWZyXzAuOTVmcl1cIj5cbiAgICAgICAgICA8bW90aW9uLmRpdlxuICAgICAgICAgICAgY2xhc3NOYW1lPVwicm91bmRlZC1bMS41NXJlbV0gYmctZ3JhZGllbnQtdG8tYnIgZnJvbS12aW9sZXRBY2NlbnQgdmlhLXJveWFsIHRvLXNreUFjY2VudCBwLTUgdGV4dC13aGl0ZSBzaGFkb3ctcHJlbWl1bVwiXG4gICAgICAgICAgICBhbmltYXRlPXt7IHk6IFswLCAtNywgMF0gfX1cbiAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDUuNCwgcmVwZWF0OiBJbmZpbml0eSwgZWFzZTogXCJlYXNlSW5PdXRcIiB9fVxuICAgICAgICAgID5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuXCI+XG4gICAgICAgICAgICAgIDxCb3Qgc2l6ZT17MjR9IC8+XG4gICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInJvdW5kZWQtZnVsbCBiZy1hbWJlciBweC0zIHB5LTEgdGV4dC1bMC42OHJlbV0gZm9udC1ibGFjayB0ZXh0LVsjMDUwNTA1XVwiPkFJIFBsYW5uZXI8L3NwYW4+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxoNCBjbGFzc05hbWU9XCJtdC0xMiB0ZXh0LTN4bCBmb250LWJsYWNrIGxlYWRpbmctbm9uZVwiPlNtYXJ0IFRyaXAgUGxhbjwvaDQ+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC0yIHRleHQtc20gZm9udC1ib2xkIHRleHQtY3lhbi01MC84MFwiPlBlcnNvbmFsaXplZCByZWNvbW1lbmRhdGlvbnMsIHZlbmRvcnMsIGV2ZW50cywgYW5kIHJvdXRlIGxvZ2ljLjwvcD5cbiAgICAgICAgICA8L21vdGlvbi5kaXY+XG5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ2FwLTRcIj5cbiAgICAgICAgICAgIDxXaWRnZXQgSWNvbj17RG9sbGFyU2lnbn0gbGFiZWw9XCJWZW5kb3IgQmlkXCIgdmFsdWU9XCIkNDIwIG9mZmVyXCIgLz5cbiAgICAgICAgICAgIDxXaWRnZXQgSWNvbj17Q2FsZW5kYXJDaGVja30gbGFiZWw9XCJCb29raW5nIFN0YXR1c1wiIHZhbHVlPVwiQ29uZmlybWVkXCIgLz5cbiAgICAgICAgICAgIDxXaWRnZXQgSWNvbj17Q2xvdWRTdW59IGxhYmVsPVwiV2VhdGhlclwiIHZhbHVlPVwiR2lsZ2l0IDI0Q1wiIC8+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtNCBncmlkIGdhcC00IHNtOmdyaWQtY29scy0zXCI+XG4gICAgICAgICAgPFdpZGdldCBJY29uPXtMaWZlQnVveX0gbGFiZWw9XCJFbWVyZ2VuY3lcIiB2YWx1ZT1cIjI0Lzcgc3VwcG9ydFwiIGNvbXBhY3QgLz5cbiAgICAgICAgICA8V2lkZ2V0IEljb249e01lc3NhZ2VDaXJjbGV9IGxhYmVsPVwiTWVzc2FnaW5nXCIgdmFsdWU9XCJSZXZpZXcgdGhyZWFkXCIgY29tcGFjdCAvPlxuICAgICAgICAgIDxXaWRnZXQgSWNvbj17VXNlcnN9IGxhYmVsPVwiVmVuZG9yc1wiIHZhbHVlPVwiNCBhY3RpdmUgYmlkc1wiIGNvbXBhY3QgLz5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC00IHJvdW5kZWQtWzEuNDVyZW1dIGJvcmRlciBib3JkZXItY3lhbi0zMDAvMjAgYmctWyMwQTBBMTJdIHAtNFwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWItMyBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW5cIj5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteHMgZm9udC1ibGFjayB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMTZlbV0gdGV4dC1jeWFuLTEwMFwiPkFjdGl2aXR5IFN0cmVhbTwvcD5cbiAgICAgICAgICAgIDxTaGllbGRDaGVjayBzaXplPXsxNn0gY2xhc3NOYW1lPVwidGV4dC1lbWVyYWxkXCIgLz5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInNwYWNlLXktMlwiPlxuICAgICAgICAgICAge2FjdGl2aXR5Lm1hcCgoaXRlbSkgPT4gKFxuICAgICAgICAgICAgICA8ZGl2IGtleT17aXRlbX0gY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGdhcC0zIHJvdW5kZWQteGwgYmctWyMxMTExMUFdIHB4LTMgcHktMlwiPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBtaW4tdy0wIGl0ZW1zLWNlbnRlciBnYXAtMlwiPlxuICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwic3RhdHVzLWRvdCBzaHJpbmstMFwiIC8+XG4gICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0cnVuY2F0ZSB0ZXh0LXhzIGZvbnQtYm9sZCB0ZXh0LXNsYXRlLTMwMFwiPntpdGVtfTwvc3Bhbj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJzaHJpbmstMCB0ZXh0LVswLjYycmVtXSBmb250LWJsYWNrIHRleHQtc2xhdGUtNTAwXCI+TGl2ZTwvc3Bhbj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTQgcm91bmRlZC0yeGwgYm9yZGVyIGJvcmRlci1wdXJwbGUtMzAwLzIwIGJnLVsjMDUwNTA1XSBwLTNcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWItMiBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW5cIj5cbiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC1bMC42MnJlbV0gZm9udC1ibGFjayB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMTRlbV0gdGV4dC1hbWJlclwiPlRyYXZlbGVyIEFjdGl2aXR5PC9zcGFuPlxuICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0ZXh0LVswLjYycmVtXSBmb250LWJsYWNrIHRleHQtY3lhbi0yMDBcIj4rMzglPC9zcGFuPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8TWluaUxpbmVDaGFydCBkYXRhPXtbMjYsIDQ0LCAzOSwgNTgsIDc0LCA4OF19IGNvbG9yPVwicHVycGxlXCIgaGVpZ2h0PXs2NH0gLz5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L21vdGlvbi5kaXY+XG4gICk7XG59XG5cbmZ1bmN0aW9uIFdpZGdldCh7IEljb24sIGxhYmVsLCB2YWx1ZSwgY29tcGFjdCA9IGZhbHNlIH0pIHtcbiAgcmV0dXJuIChcbiAgICA8bW90aW9uLmFydGljbGVcbiAgICAgIGNsYXNzTmFtZT17YHJvdW5kZWQtWzEuMzVyZW1dIGJvcmRlciBib3JkZXItY3lhbi0zMDAvMjAgYmctWyMwQTBBMTJdICR7Y29tcGFjdCA/IFwicC00XCIgOiBcInAtNVwifSBzaGFkb3ctcHJlbWl1bWB9XG4gICAgICB3aGlsZUhvdmVyPXt7IHk6IC00IH19XG4gICAgPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gZ2FwLTNcIj5cbiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiZmxleCBoLTEwIHctMTAgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQtMnhsIGJnLWN5YW4tMzAwLzEwIHRleHQtY3lhbi0xMDBcIj5cbiAgICAgICAgICA8SWNvbiBzaXplPXsxN30gLz5cbiAgICAgICAgPC9zcGFuPlxuICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJzdGF0dXMtZG90XCIgLz5cbiAgICAgIDwvZGl2PlxuICAgICAgPHAgY2xhc3NOYW1lPVwibXQtNCB0ZXh0LXhzIGZvbnQtYmxhY2sgdXBwZXJjYXNlIHRyYWNraW5nLVswLjE0ZW1dIHRleHQtc2xhdGUtNDAwXCI+e2xhYmVsfTwvcD5cbiAgICAgIDxwIGNsYXNzTmFtZT1cIm10LTEgdGV4dC1zbSBmb250LWJsYWNrIHRleHQtd2hpdGVcIj57dmFsdWV9PC9wPlxuICAgIDwvbW90aW9uLmFydGljbGU+XG4gICk7XG59XG4iXSwiZmlsZSI6IkM6L1VzZXJzL0hQL0Rlc2t0b3AvcG9ydGZvbGlvL3NyYy9jb21wb25lbnRzL1RyYXZFcmFDYXNlU3R1ZHkuanN4In0=
